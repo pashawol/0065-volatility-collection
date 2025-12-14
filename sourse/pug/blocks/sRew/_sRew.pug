@@ -11,8 +11,8 @@ mixin sRew(data)
 			+defSlider()
 				mixin slide(src)
 					.swiper-slide(data-fancybox="modal-slider-rev-sRew" data-src=src)
-						+img(src=src, alt="")
-				+slide("img/slide.png")
-				+slide("img/slide.png")
-				+slide("img/slide.png")
+						+e.img-wrap
+							+img(src=src, alt="")
+				- for (var x = 1; x < 26; x++)
+					+slide(`img/slider-4/img-2025-last-${x}.png`)
 	// end sRew

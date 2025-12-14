@@ -149,11 +149,16 @@
 		max-width: 100%;
 		overflow: visible;
 	}
+	.swiper-wrapper {
+		align-items: center;
+		text-align: center;
+	}
 	.swiper-slide {
 		@include mt;
 		img {
 			max-width: 100%;
 			height: auto;
+			border-radius: 8px;
 		}
 		// margin-left: 20px;
 		// margin-right: 20px;

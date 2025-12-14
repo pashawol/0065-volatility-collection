@@ -22,10 +22,8 @@ mixin sAuthor(data)
 			+img("img/autor-block.png").author-img
 			.h3.mb-5.text-center Отзывы учеников
 			+defSlider()
-				.swiper-slide(data-fancybox="modal-slider-rev" data-src="img/slide.png")
-					+img(src="img/slide.png", alt="")
-				.swiper-slide(data-fancybox="modal-slider-rev" data-src="img/slide.png")
-					+img(src="img/slide.png", alt="")
-				.swiper-slide(data-fancybox="modal-slider-rev" data-src="img/slide.png")
-					+img(src="img/slide.png", alt="")
+				- for (var x = 1; x < 16; x++)
+					.swiper-slide(data-fancybox="modal-slider-rev" data-src=`img/slider-3/img-2025-rewl-${x}.png`)
+						+e.img-wrap
+							+img(src=`img/slider-3/img-2025-rewl-${x}.png`, alt="")
 	// end sAuthor

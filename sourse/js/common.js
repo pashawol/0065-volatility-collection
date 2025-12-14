@@ -31,6 +31,8 @@ function eventHandler() {
 		new Swiper(defSwiper.querySelector(".swiper"), {
 			slidesPerView: "auto",
 			spaceBetween: 0,
+			initialSlide: 1,
+			centeredSlides: true,
 			// loop: true,
 			// autoHeight: true,
 			pagination: {

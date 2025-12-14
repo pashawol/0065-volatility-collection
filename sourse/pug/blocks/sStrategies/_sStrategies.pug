@@ -33,12 +33,9 @@ mixin sStrategies(data)
 						li Потенциал отдельного дня не имеет верхней границы, иногда рынок даёт особенно сильное движение
 				.h3.text-center.mb-5 Примеры сильных дней
 				+defSlider()
-					.swiper-slide(data-fancybox="modal-slider-rev" data-src="img/slide.png")
-						+img(src="img/slide.png", alt="")
-					.swiper-slide(data-fancybox="modal-slider-rev" data-src="img/slide.png")
-						+img(src="img/slide.png", alt="")
-					.swiper-slide(data-fancybox="modal-slider-rev" data-src="img/slide.png")
-						+img(src="img/slide.png", alt="")
+					- for (var x = 1; x < 10; x++)
+						.swiper-slide(data-fancybox="modal-slider-rev" data-src=`img/slider-2/img-2025-big-deal-${x}.jpg`)
+							+img(src=`img/slider-2/img-2025-big-deal-${x}.jpg`, alt="")
 				.text-center.pt-3
 					a.btn.btn-primary(href='#sForm') Выбрать версию участия
 	// end sStrategies

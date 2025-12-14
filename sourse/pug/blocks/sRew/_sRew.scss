@@ -14,10 +14,15 @@
 	}
 	&__item {
 	}
-	.swiper-slide {
+	.def-slider__img-wrap {
 		border: 1px solid #da4053;
 		border-radius: 8px;
 		padding: 16px;
+	}
+	.swiper-slide {
+		text-align: center;
+		width: auto;
+		max-width: 90%;
 		img {
 			border-radius: inherit;
 		}
