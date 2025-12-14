@@ -1,0 +1,24 @@
+mixin sMyName(data)
+	// start sMyName
+	+b.SECTION.sMyName.section#sMyName&attributes(attributes)
+		.container
+			+b.section-title
+				.row
+					.col-xxl-8.col-lg-6
+						h2 Меня зовут 
+							span Станислав Добровский
+					.col
+						p 
+							span Уже 6 лет я каждый день заранее даю список акций, 
+							| в которых сегодня ожидается движение. И показываю, как забрать свою часть этого движения.
+			.text-center.h6.fw-500.mb-5  Вот акции, которые я давал в течение одного месяца. <br> Посмотрите, здесь каждый день есть деньги.
+			
+			+defSlider()
+				.swiper-slide(data-fancybox="modal-slider-rev" data-src="img/slide.png")
+					+img(src="img/slide.png", alt="")
+				.swiper-slide(data-fancybox="modal-slider-rev" data-src="img/slide.png")
+					+img(src="img/slide.png", alt="")
+				.swiper-slide(data-fancybox="modal-slider-rev" data-src="img/slide.png")
+					+img(src="img/slide.png", alt="")
+			.text-center.my-5.h3.ttu Мечтаете зарабатывать каждый день на движении рынка?
+				.text-primary Читайте дальше внимательно, я покажу, как это делать пошагово

@@ -1,0 +1,44 @@
+mixin sStrategies(data)
+	// start sStrategies
+	+b.SECTION.sStrategies.section.dark-bg#sStrategies&attributes(attributes)
+		.container
+			+b.section-title
+				h2 Тактико-технические  характеристики стратегии  
+
+					span.text-primary «Сбор волатильности»
+			ul
+				li.main-list-item 
+					.h3  Рынки и условия работы
+					ul
+						li Рынки: NYSE, NASDAQ
+						li Минимальный депозит: от $200
+						li Работаем внутри дня, без переноса позиций
+						li Время торговли: 1 час в день, начало американской сессии в 17:30 МСК (зима)
+						li Можно торговать не каждый день, только в удобные Вам дни
+
+				li.main-list-item 
+					.h3 Принципы и механика стратегии
+					ul
+						li Работа по чек-листу – заранее известные сценарии входа
+						li Вход и выход основаны на рыночной механике, без догадок
+						li Не нужны запаздывающие индикаторы, работа на ценовых уровнях
+						li Риск в сделке: 1–4%
+						li Средняя длительность сделки: 10–30 минут
+
+				li.main-list-item 
+					.h3 Результаты и потенциал
+					ul
+						li Прибыль в сделке: от 2% до 40% (и выше), средняя сделка — +5% к депозиту
+						li Потенциал стратегии: от +30% в месяц
+						li Потенциал отдельного дня не имеет верхней границы, иногда рынок даёт особенно сильное движение
+				.h3.text-center.mb-5 Примеры сильных дней
+				+defSlider()
+					.swiper-slide(data-fancybox="modal-slider-rev" data-src="img/slide.png")
+						+img(src="img/slide.png", alt="")
+					.swiper-slide(data-fancybox="modal-slider-rev" data-src="img/slide.png")
+						+img(src="img/slide.png", alt="")
+					.swiper-slide(data-fancybox="modal-slider-rev" data-src="img/slide.png")
+						+img(src="img/slide.png", alt="")
+				.text-center.pt-3
+					a.btn.btn-primary(href='#sForm') Выбрать версию участия
+	// end sStrategies

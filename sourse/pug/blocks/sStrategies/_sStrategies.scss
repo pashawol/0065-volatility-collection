@@ -1,0 +1,58 @@
+// start .sStrategies
+.sStrategies {
+	// --sPT: #{rem()};
+	// --sPB: #{rem()};
+	// --sTPB: #{rem()};
+
+	&__row {
+		--bs-gutter-x: #{rem(8)};
+		--bs-gutter-y: #{rem(8)};
+	}
+	.section-title {
+	}
+	&__col {
+	}
+	&__item {
+	}
+
+	ul {
+		margin-bottom: var(--sPB);
+	}
+	.main-list-item {
+		padding-left: 4em;
+		list-style: none;
+		margin-bottom: 2em;
+		position: relative;
+		li {
+			list-style: disc;
+			margin-left: 10px;
+			opacity: 0.5;
+		}
+		&::before {
+			content: "";
+			background-color: $primary;
+			position: absolute;
+			left: 0;
+			top: 1em;
+			width: em(40);
+			height: em(4);
+		}
+	}
+	.swiper-pagination {
+		opacity: 0.5;
+	}
+	@include media-breakpoint-up(xl) {
+	}
+	@include media-breakpoint-up(lg) {
+	}
+	@include media-breakpoint-up(md) {
+	}
+	@include media-breakpoint-up(sm) {
+	}
+	@include media-breakpoint-between(md, xl) {
+	}
+	@include media-breakpoint-only(xl) {
+	}
+	@include media-breakpoint-down(xl) {
+	}
+} // end.sStrategies

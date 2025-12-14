@@ -1,0 +1,81 @@
+// start .sProgram
+.sProgram {
+	// --sPT: #{rem()};
+	// --sPB: #{rem()};
+	// --sTPB: #{rem()};
+
+	&__row {
+		// --bs-gutter-x: #{rem()};
+		// --bs-gutter-y: #{rem()};
+	}
+	.section-title {
+	}
+	&__col {
+	}
+	&__item {
+	}
+
+	.item {
+		ul {
+			font-size: 20px;
+			padding-left: 20px;
+		}
+	}
+	&__aside {
+		max-width: 335px;
+	}
+	.dd-group {
+		p {
+			margin-bottom: 1em;
+		}
+		ul {
+			padding-left: 20px;
+			margin-bottom: 40px;
+			padding-left: 40px;
+		}
+		li {
+			margin-bottom: 1em;
+		}
+	}
+	counter-reset: section -1;
+	.dd-group {
+		margin-bottom: var(--sPB);
+	}
+	.dd-group__title {
+		&::before {
+			counter-increment: section;
+			content: "Модуль " counter(section) " ";
+			color: $primary;
+		}
+	}
+
+	&__item {
+		padding: 40px;
+		border: 1px solid #434343;
+		border-radius: 8px;
+		.h3 {
+			margin-bottom: 40px;
+		}
+		ul {
+			padding-left: 40px;
+		}
+		@include media-breakpoint-up(md) {
+			padding: 40px;
+		}
+		height: 100%;
+	}
+	@include media-breakpoint-up(xl) {
+	}
+	@include media-breakpoint-up(lg) {
+	}
+	@include media-breakpoint-up(md) {
+	}
+	@include media-breakpoint-up(sm) {
+	}
+	@include media-breakpoint-between(md, xl) {
+	}
+	@include media-breakpoint-only(xl) {
+	}
+	@include media-breakpoint-down(xl) {
+	}
+} // end.sProgram

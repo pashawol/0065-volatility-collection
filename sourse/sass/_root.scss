@@ -1,22 +1,22 @@
 :root {
 	--animate-delay: 1.2s;
-	--bs-body-font-size: #{$em-base};
-
-	--sPT: #{rem(80 * 0.5)};
-	--sPB: #{rem(90 * 0.5)};
-	--sTPB: #{rem(40 * 0.5)};
 
 	--fancybox-content-color: var(--bs-body-color);
-	--swiperArrowSize: #{rem(68)};
+	--swiperArrowSize: #{rem(40)};
 	--swiperArrowPosition: calc(-1 * var(--swiperArrowSize) / 2);
-	--swiperBorderColorDef: var(--bs-primary);
-	--swiperColorDef: var(--bs-primary);
-	--swiperBgDef: #ffffff;
+	--swiperBorderColorDef: #a1a1a1;
+	--swiperColorDef: #fff;
+	--swiperBgDef: #a1a1a1;
+	--swiperBgDef: #a1a1a1;
 
 	--swiperBorderColorDefHover: var(--bs-primary);
-	--swiperColorDefHover: var(--bs-primary);
-	--swiperBgDefHover: #ffffff;
+	--swiperColorDefHover: #fff;
+	--swiperBgDefHover: var(--bs-primary);
+	--dark-card-bg: $gray-950;
+	--accent-color: #{$pink};
 
+	--sp-base: #{rem(20)};
+	--red: #{$primary};
 	//  --carousel-button-width: 48px;
 	//  --carousel-button-height: 48px;
 
@@ -25,12 +25,18 @@
 
 	//  --carousel-button-svg-stroke-width: 2.5;
 	//  --carousel-button-svg-filter: drop-shadow(1px 1px 1px rgba(0, 0, 0/ 0.4));
-
-	@include media-breakpoint-up(md) {
-		--sPT: #{rem(80)};
-		--sPB: #{rem(90)};
-		--sTPB: #{rem(40)};
+	@include media-breakpoint-up(sm) {
+		--sp-base: #{rem(40)};
 	}
+	@include media-breakpoint-up(xl) {
+		// --bs-body-font-size: 20px;
+	}
+	@include media-breakpoint-up(xxl) {
+		--bs-body-font-size: #{$em-base};
+	}
+	--sPT: #{rem(75)};
+	--sTPB: #{rem(60)};
+	--sPB: #{rem(75)};
 }
 .fancybox__container {
 	--fancybox-bg: rgba(58, 59, 60, 0.77);
@@ -84,4 +90,52 @@
 }
 
 @include media-breakpoint-down(xs) {
+}
+
+h1,
+.h1 {
+	@include media-breakpoint-up(xl) {
+		font-size: 120px;
+	}
+}
+h2,
+.h2 {
+	@include media-breakpoint-up(xl) {
+		font-size: 100px;
+	}
+}
+
+.h25,
+h1,
+h2,
+.h1,
+.h2 {
+	line-height: 90%;
+	font-family: Akrobat, sans-serif;
+	font-weight: 800;
+	text-transform: uppercase;
+	letter-spacing: -0.05em;
+}
+.h3 {
+	text-transform: uppercase;
+	font-family: Akrobat, sans-serif;
+	font-weight: bold;
+	letter-spacing: -0.04em;
+}
+.h5,
+h5 {
+	letter-spacing: -0.04em;
+}
+
+.h25 {
+	@include rfs(60px);
+}
+
+.item {
+	background: #f5f5f5;
+	padding: 20px;
+	@include media-breakpoint-up(sm) {
+		padding: 40px;
+	}
+	border-radius: 10px;
 }

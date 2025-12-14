@@ -1,17 +1,17 @@
-'use strict';
+"use strict";
 
-import  fs from 'fs'
-import  colors from 'colors'
-import  readline from 'readline'
+import fs from "fs";
+import colors from "colors";
+import readline from "readline";
 // import { fileURLToPath } from 'url'
-import path  from 'path'
+import path from "path";
 
 // const __filename = fileURLToPath(import.meta.url);
 // const __dirname = dirname(__filename);
 const rl = readline.createInterface(process.stdin, process.stdout);
 
 // folder with all blocks
-const BLOCKS_DIR = path.join('sourse/pug/blocks');
+const BLOCKS_DIR = path.join("sourse/pug/blocks");
 
 //////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -21,7 +21,7 @@ const fileSources = {
 	// start {blockName}
 	+b.SECTION.{blockName}.section#{blockName}&attributes(attributes)
 		.container
-			+b.section-title.text-center
+			+b.section-title
 				h2 {blockName}
 				
 			+e.row.row
@@ -53,16 +53,15 @@ const fileSources = {
 	@include media-breakpoint-between(md, xl) {}
 	@include media-breakpoint-only(xl) {}
 	@include media-breakpoint-down(xl) {}
-} // end.{blockName}`
-	,
+} // end.{blockName}`,
 	// js: `let {blockName}Vue = new Vue({
 	// 	el: '#{blockName}',
 	// 	data: {
 	// 		imgSRc: 'img/',
 	// 	},
-	// 	methods: { 
+	// 	methods: {
 	// 	},
-	// 	 created: function () { 
+	// 	 created: function () {
 	// 	},
 	// 	computed: {
 
@@ -77,10 +76,9 @@ function validateBlockName(blockName) {
 		if (isValid) {
 			resolve(isValid);
 		} else {
-			const errMsg = (
+			const errMsg =
 				`ERR>>> An incorrect block name '${blockName}'\n` +
-				`ERR>>> A block name must include letters, numbers & the minus symbol.`
-			);
+				`ERR>>> A block name must include letters, numbers & the minus symbol.`;
 			reject(errMsg);
 		}
 	});
@@ -119,7 +117,7 @@ function createFiles(blocksPath, blockName) {
 
 		promises.push(
 			new Promise((resolve, reject) => {
-				fs.writeFile(filePath, fileSource, 'utf8', err => {
+				fs.writeFile(filePath, fileSource, "utf8", err => {
 					if (err) {
 						reject(`ERR>>> Failed to create a file '${filePath}'`.red);
 					} else {
@@ -161,9 +159,11 @@ function initMakeBlock(blockName) {
 		.then(() => createFiles(blockPath, blockName))
 		.then(() => getFiles(blockPath))
 		.then(files => {
-			const line = '-'.repeat(48 + blockName.length);
+			const line = "-".repeat(48 + blockName.length);
 			console.log(line);
-			console.log(`The block has just been created in 'sourse/pug/blocks/${blockName}'`);
+			console.log(
+				`The block has just been created in 'sourse/pug/blocks/${blockName}'`
+			);
 			console.log(line);
 
 			// Displays a list of files created
@@ -172,7 +172,6 @@ function initMakeBlock(blockName) {
 			rl.close();
 		});
 }
-
 
 // //////////////////////////////////////////////////////////////////////////
 //
@@ -183,18 +182,16 @@ function initMakeBlock(blockName) {
 const blockNameFromCli = process.argv
 	.slice(2)
 	// join all arguments to one string (to simplify the capture user input errors)
-	.join(' ');
-
+	.join(" ");
 
 // If the user pass the name of the block in the command-line options
 // that create a block. Otherwise - activates interactive mode
-if (blockNameFromCli !== '') {
+if (blockNameFromCli !== "") {
 	initMakeBlock(blockNameFromCli).catch(printErrorMessage);
-}
-else {
-	rl.setPrompt('Block name: '.magenta);
+} else {
+	rl.setPrompt("Block name: ".magenta);
 	rl.prompt();
-	rl.on('line', (line) => {
+	rl.on("line", line => {
 		const blockName = line.trim();
 		initMakeBlock(blockName).catch(printErrorMessage);
 	});

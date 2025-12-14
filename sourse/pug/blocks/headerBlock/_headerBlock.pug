@@ -1,11 +1,18 @@
 mixin headerBlock()
 	// start headerBlock
-	+b.headerBlock.section#headerBlock&attributes(attributes)
-		.container
-			+b.section-title.text-center
-				h2 headerBlock ds dfsdfdsfsd
-				+icon('telegram')
-				+iconC('telegram')
-			.row
-						
+	+b.headerBlock#headerBlock&attributes(attributes)
+		.container.section
+			+b.section-title
+				h1 Сбор
+					br
+					span.text-primary волатильности
+			+e.row
+				+e.item Деньги каждый <br> день за 1 час
+				+e.item #[span.text-primary Простой] пошаговый сценарий торговли
+				+e.item Результат сразу,  даже у новичков
+
+			a.btn.btn-primary(href="#sForm") Получить торговую стратегию
+			img(src="img/header-img.png", alt="").head-img
+			
+
 	// end headerBlock

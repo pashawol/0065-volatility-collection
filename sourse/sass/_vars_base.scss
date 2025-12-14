@@ -1,4 +1,53 @@
-$default-font: "roboto";
+@font-face {
+    font-family: 'Akrobat';
+    src: url('../fonts/Akrobat-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Akrobat';
+    src: url('../fonts/Akrobat-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Akrobat';
+    src: url('../fonts/Akrobat-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Akrobat';
+    src: url('../fonts/Akrobat-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Akrobat';
+    src: url('../fonts/Akrobat-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Akrobat';
+    src: url('../fonts/Akrobat-ExtraBold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+$default-font: "Onest";
 $addr: '../fonts/';
 $file-format: woff2;
 $rfs-rem-value: 16 !default;
@@ -21,7 +70,7 @@ $font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mon
 
 $link-decoration: inherit;
 
-$spacers: ( 0: 0, );
+// $spacers: ( 0: 0, );
 $position-values: ( 100: 100% );
 $border-widths: ( 1: 1px,  );
 $aspect-ratios: ( );
@@ -51,4 +100,4 @@ $enable-deprecation-messages: true ;
 $enable-important-utilities:  true ;
 
 $enable-dark-mode:            false ;
-$color-mode-type:             data ; // `data` or `media-query`
+$color-mode-type:             data ; // `data` or `media-query

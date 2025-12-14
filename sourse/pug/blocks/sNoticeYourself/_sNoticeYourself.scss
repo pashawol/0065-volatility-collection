@@ -1,0 +1,48 @@
+// start .sNoticeYourself
+.sNoticeYourself {
+	// --sPT: #{rem()};
+	// --sPB: #{rem()};
+	// --sTPB: #{rem()};
+
+	&__row {
+		// --bs-gutter-x: #{rem()};
+		// --bs-gutter-y: #{rem()};
+	}
+	.section-title {
+	}
+	&__col {
+	}
+	&__item {
+		border: 1px solid rgba(67, 67, 67, 0.2);
+		border-radius: 8px;
+		margin-bottom: 8px;
+		padding: 20px;
+		@include media-breakpoint-up(sm) {
+			padding: 40px;
+			display: flex;
+			align-self: center;
+			flex-direction: row-reverse;
+		}
+	}
+	&__caption {
+		flex-grow: 1;
+		ul {
+			padding-left: 20px;
+		}
+	}
+
+	@include media-breakpoint-up(xl) {
+	}
+	@include media-breakpoint-up(lg) {
+	}
+	@include media-breakpoint-up(md) {
+	}
+	@include media-breakpoint-up(sm) {
+	}
+	@include media-breakpoint-between(md, xl) {
+	}
+	@include media-breakpoint-only(xl) {
+	}
+	@include media-breakpoint-down(xl) {
+	}
+} // end.sNoticeYourself

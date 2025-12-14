@@ -1,0 +1,22 @@
+mixin sEveryDay(data)
+	// start sEveryDay
+	+b.SECTION.sEveryDay.section#sEveryDay&attributes(attributes)
+		.container
+			+b.section-title
+				h2 Ежедневные 
+					br
+					span деньги с рынка
+			.h3.ttu.mb-5 Как выглядит торговый день трейдера, #[span.text-primary который собирает волатильность?]
+			.def-swiper.def-swiper-js
+				+e.slider--js.swiper
+					.swiper-wrapper
+						mixin item(i,p)
+							+e.slide.swiper-slide
+								+img(`img/sEveryDay-i-${i}.svg`)
+								p!= p
+						+item(1, `У Вас есть короткий список акций, в которых сегодня с высокой вероятностью будет сильное движение, часть из них пойдёт в рост`)
+						+item(2, `Вы точно знаете, как акция ведёт себя перед стартом этого роста`)
+						+item(3, `Вы просто ждёте знакомую картину, входите в сделку по чек-листу и забираете деньги в течение одного часа.`)
+						+item(4, `Закрываете терминал  и идёте по своим делам`)
+						+item(5, `На следующий день у Вас уже новый список акций, и Вы повторяете всё снова`)
+	// end sEveryDay

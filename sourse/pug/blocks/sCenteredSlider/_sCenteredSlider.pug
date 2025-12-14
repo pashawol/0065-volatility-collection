@@ -1,0 +1,17 @@
+mixin sCenteredSlider(data)
+	// start sCenteredSlider
+	+b.SECTION.sCenteredSlider.section#sCenteredSlider&attributes(attributes)
+		.container
+			+e.slider-wrap
+				.centered-swiper-js
+					.swiper
+						.swiper-wrapper
+							each slide in data.slides || ['Slide 1', 'Slide 2', 'Slide 3', 'Slide 4', 'Slide 5']
+								.swiper-slide
+									+e.slide-content
+										h3= slide.title || slide
+										if slide.text
+											p= slide.text
+					.swiper-button-next
+					.swiper-button-prev
+	// end sCenteredSlider

@@ -2,7 +2,7 @@
 <html lang="ru">
 	<head>
 		<meta charset="utf-8">
-		<title>Главная</title>
+		<title>Сбор волатильности</title>
 		<meta name="description" content="о чем страница">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width,initial-scale=1.0,  shrink-to-fit=no, viewport-fit=cover">
@@ -23,239 +23,1202 @@
 	</head>
 	<body class="main-page" data-bg="main.jpg">
 		<div class="main-wrapper">
-			<script>addBlock(`header`)</script>
-			<div id="headerWrap"></div>
-			<main>
-				<svg class="icon icon-truck ">
-					<use xlink:href="img/svg/sprite.svg#truck"></use>
-				</svg>
-				<!-- start headerBlock-->
-				<div class="headerBlock section" id="headerBlock">
-					<div class="container">
-						<div class="section-title text-center">
-							<h2>headerBlock ds dfsdfdsfsd</h2>
-							<svg class="icon icon-telegram ">
-								<use xlink:href="img/svg/sprite.svg#telegram"></use>
-							</svg>
-							<svg class="iconC iconC-telegram ">
-								<use xlink:href="img/svg/spriteC.svg#telegram"></use>
-							</svg>
+			<!-- start topLine-->
+			<div class="topLine section" id="topLine">
+				<div class="container">
+					<div class="topLine__row row">
+						<div class="col-auto">
+							<div class="topLine__logo">
+								<svg width="30" height="26" viewBox="0 0 30 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M12.8948 0.112088C9.97445 0.474633 7.30197 1.67077 5.11637 3.59348C2.38099 5.99991 0.672099 9.20686 0.193504 12.8316C-0.114646 15.1659 0.152596 17.5863 0.97475 19.908C1.24314 20.6659 1.92827 22.0408 2.40849 22.7853C2.79872 23.3903 3.3936 24.1738 3.90016 24.7501L4.13195 25.0137L4.16934 24.5638C4.24257 23.6829 4.44544 22.9738 4.8033 22.3478C5.00685 21.9918 5.68155 21.3205 6.05921 21.0983C6.33824 20.934 6.37522 20.8926 6.3891 20.7282C6.4056 20.5322 6.40062 20.524 5.79511 19.7483C5.43772 19.2905 5.07677 18.5585 4.9288 17.9915C4.78994 17.4593 4.73704 16.3405 4.82273 15.7468C4.9046 15.179 5.10165 14.389 5.27273 13.9425C5.52462 13.285 6.06989 12.202 6.42246 11.659L6.76634 11.1294V9.99535C6.76634 9.37163 6.78168 8.8613 6.80044 8.8613C6.81919 8.8613 8.22753 9.33032 9.93013 9.90352C11.6327 10.4768 13.1789 10.9794 13.3662 11.0206C13.8103 11.1182 14.8228 11.1173 15.2257 11.019C15.3985 10.9768 16.9129 10.4769 18.5911 9.90799L21.6422 8.87375V9.98449V11.0953L21.9778 11.5621C22.8181 12.7313 23.4227 14.0054 23.7474 15.2917C23.9054 15.9178 23.918 16.0302 23.915 16.7936C23.9125 17.4644 23.8908 17.6985 23.799 18.0447C23.6361 18.6592 23.2769 19.3544 22.8228 19.9346C22.4667 20.3894 22.4282 20.4611 22.4405 20.6466C22.4534 20.8427 22.4728 20.8637 22.8342 21.0725C24.0452 21.7723 24.6909 22.9244 24.8147 24.6062C24.8346 24.877 24.8624 25.0986 24.8764 25.0986C24.8904 25.0986 25.0376 24.9489 25.2035 24.7659C28.2912 21.3583 29.6123 16.8505 28.865 12.2729C28.4003 9.42604 27.0544 6.7028 25.0807 4.61595C22.8857 2.29502 20.2328 0.833025 17.1637 0.252953C16.4843 0.124545 16.3072 0.113419 14.7543 0.101813C13.8324 0.0949452 12.9956 0.0995769 12.8948 0.112088ZM14.8282 3.53886C15.1893 3.5865 16.6577 4.06473 23.1086 6.23553C24.8361 6.81683 25.0196 6.92778 24.7212 7.21036C24.6464 7.28116 22.9716 7.86896 20.0201 8.86028C15.3481 10.4295 15.2001 10.4757 14.6469 10.5375C13.9734 10.6127 13.697 10.5342 8.92255 8.91102C6.43194 8.06428 4.32093 7.32817 4.23147 7.2752C4.03159 7.15691 3.99434 6.97319 4.14357 6.84164C4.26839 6.73154 4.43659 6.67218 9.64681 4.89822C13.8845 3.45533 13.9884 3.42807 14.8282 3.53886ZM8.28535 12.8776C8.28535 12.9491 8.31123 13.0238 8.34287 13.0436C8.3745 13.0635 8.46879 13.1894 8.55239 13.3234C8.78762 13.7004 8.76772 13.9897 8.48178 14.3476C8.03398 14.908 7.95908 15.0162 7.80131 15.3296C7.56125 15.8066 7.44623 16.2332 7.4137 16.767C7.31339 18.4124 8.35806 19.7845 9.93458 20.0782C10.9901 20.2749 12.1287 19.901 12.9443 19.0899L13.2504 18.7855L13.2844 19.0805C13.3565 19.7042 13.7939 20.6077 14.3294 21.2389L14.5101 21.4519L14.7107 21.2174C15.221 20.6211 15.6668 19.7838 15.7481 19.2692C15.8278 18.764 15.7925 18.7732 16.1967 19.1536C17.265 20.1589 18.7741 20.4119 20.0184 19.7943C20.3091 19.65 20.5151 19.4929 20.8105 19.19C21.431 18.5538 21.6946 17.8844 21.6946 16.9446C21.6946 16.0713 21.402 15.2901 20.8038 14.566C20.6375 14.3645 20.4751 14.1501 20.4432 14.0894C20.3164 13.8487 20.4129 13.4879 20.7038 13.1145C20.9762 12.7651 20.9155 12.7258 20.1611 12.7637C18.9522 12.8243 17.7722 13.1115 16.8495 13.5696C16.1027 13.9403 15.6691 14.3559 15.3565 15.0003C14.9737 15.7898 14.9029 16.5127 15.1222 17.3935C15.1576 17.5353 15.1537 17.5388 15.0187 17.4867C14.836 17.4161 14.1739 17.4167 14.0437 17.4876C13.9225 17.5535 13.921 17.5345 14.0215 17.1978C14.1217 16.862 14.1205 16.1187 14.019 15.6811C13.6545 14.1097 12.232 13.1804 9.64723 12.8253C9.34474 12.7837 8.91454 12.7492 8.6913 12.7487C8.29557 12.7476 8.28535 12.7509 8.28535 12.8776ZM10.5199 14.2359C9.88655 14.9483 9.8644 16.0097 10.4685 16.6914C11.3847 17.7251 13.0519 16.8036 13.0519 15.2635C13.0519 14.935 13.1037 14.9358 13.2702 15.2667C13.5111 15.7457 13.5912 16.4548 13.4667 17.0066C13.2245 18.0804 12.2969 18.9776 11.1781 19.2205C10.8033 19.3017 10.69 19.3058 10.34 19.2506C8.59267 18.9748 7.75862 17.1503 8.63274 15.5159C8.96357 14.8974 9.5662 14.3746 10.2267 14.1332C10.6813 13.9671 10.7403 13.9878 10.5199 14.2359ZM18.9368 14.1535C19.7979 14.4829 20.4255 15.1651 20.7291 16.1016C20.8571 16.4963 20.8565 17.2009 20.7278 17.5922C20.5491 18.1354 20.123 18.6861 19.6735 18.9548C19.4276 19.1017 18.7289 19.2962 18.4518 19.2949C18.126 19.2933 17.5429 19.143 17.2016 18.9727C16.1119 18.4288 15.4153 17.1299 15.6124 16.0091C15.6772 15.6408 15.846 15.212 16.0056 15.0102C16.0857 14.909 16.0883 14.9143 16.0593 15.1167C16.0197 15.3929 16.1573 15.9911 16.3289 16.2886C16.8891 17.2602 18.1299 17.4151 18.7459 16.5905C19.2284 15.9444 19.1652 14.8692 18.6065 14.2225C18.4005 13.984 18.4608 13.9714 18.9368 14.1535Z" fill="var(--bs-primary)"></path>
+								</svg>
+							</div>
 						</div>
-						<div class="row"></div>
+						<div class="col">Бесплатно! Пошаговый онлайн курс: первые деньги на Forex</div>
+					</div>
+				</div>
+			</div>
+			<!-- end topLine-->
+			<main>
+				<!-- start headerBlock-->
+				<div class="headerBlock" id="headerBlock">
+					<div class="container section">
+						<div class="section-title">
+							<h1>Сбор<br/><span class="text-primary">волатильности</span></h1>
+						</div>
+						<div class="headerBlock__row">
+							<div class="headerBlock__item">Деньги каждый <br> день за 1 час
+							</div>
+							<div class="headerBlock__item"><span class="text-primary">Простой</span> пошаговый сценарий торговли
+							</div>
+							<div class="headerBlock__item">Результат сразу,  даже у новичков
+							</div>
+						</div><a class="btn btn-primary" href="#sForm">Получить торговую стратегию</a><img class="head-img" src="img/header-img.png" alt=""/>
 					</div>
 				</div>
 				<!-- end headerBlock-->
-				<!-- start sCatalog-->
-				<div class="sCatalog section">
+				<!-- start sEveryDay-->
+				<section class="sEveryDay section" id="sEveryDay">
 					<div class="container">
-						<div class="section-title text-center">
-							<h2>sCatalog</h2>
-							<p>Выкупаем проблемные автомобили в день обращения</p>
+						<div class="section-title">
+							<h2>Ежедневные <br/><span>деньги с рынка</span></h2>
 						</div>
-						<div class="sCatalog__row row">
-							<div class="sCatalog__col col-3">
-								<article class="product-item">
-									<a class="product-item__img-wrap" href="#">
-										<div class="img-wrap-center"> <img src="img/prod-1.jpg" alt="" loading="lazy"/>
+						<div class="h3 ttu mb-5">Как выглядит торговый день трейдера, <span class="text-primary">который собирает волатильность?</span></div>
+						<div class="def-swiper def-swiper-js">
+							<div class="sEveryDay__slider sEveryDay__slider--js swiper">
+								<div class="swiper-wrapper">
+										<div class="sEveryDay__slide swiper-slide"><img src="img/sEveryDay-i-1.svg" alt="" loading="lazy"/>
+											<p>У Вас есть короткий список акций, в которых сегодня с высокой вероятностью будет сильное движение, часть из них пойдёт в рост</p>
 										</div>
-									</a>
-									<div class="product-item__caption">
-										<div class="product-item__title">
+										<div class="sEveryDay__slide swiper-slide"><img src="img/sEveryDay-i-2.svg" alt="" loading="lazy"/>
+											<p>Вы точно знаете, как акция ведёт себя перед стартом этого роста</p>
 										</div>
-										<div class="product-item__text">
+										<div class="sEveryDay__slide swiper-slide"><img src="img/sEveryDay-i-3.svg" alt="" loading="lazy"/>
+											<p>Вы просто ждёте знакомую картину, входите в сделку по чек-листу и забираете деньги в течение одного часа.</p>
 										</div>
-										<div class="product-item__price">
+										<div class="sEveryDay__slide swiper-slide"><img src="img/sEveryDay-i-4.svg" alt="" loading="lazy"/>
+											<p>Закрываете терминал  и идёте по своим делам</p>
 										</div>
-										<a class="product-item__btn" href="#">
-										</a>
-									</div>
-								</article>
-								<!-- /.product-item-->
+										<div class="sEveryDay__slide swiper-slide"><img src="img/sEveryDay-i-5.svg" alt="" loading="lazy"/>
+											<p>На следующий день у Вас уже новый список акций, и Вы повторяете всё снова</p>
+										</div>
+								</div>
 							</div>
-							<div class="sCatalog__col col-3">
-								<article class="product-item">
-									<a class="product-item__img-wrap" href="#">
-										<div class="img-wrap-center"> <img src="img/prod-2.jpg" alt="" loading="lazy"/>
-										</div>
-									</a>
-									<div class="product-item__caption">
-										<div class="product-item__title">
-										</div>
-										<div class="product-item__text">
-										</div>
-										<div class="product-item__price">
-										</div>
-										<a class="product-item__btn" href="#">
-										</a>
-									</div>
-								</article>
-								<!-- /.product-item-->
+						</div>
+					</div>
+				</section>
+				<!-- end sEveryDay-->
+				<!-- start sMyName-->
+				<section class="sMyName section" id="sMyName">
+					<div class="container">
+						<div class="section-title">
+							<div class="row">
+								<div class="col-xxl-8 col-lg-6">
+									<h2>Меня зовут <span>Станислав Добровский</span></h2>
+								</div>
+								<div class="col">
+									<p> <span>Уже 6 лет я каждый день заранее даю список акций, </span>в которых сегодня ожидается движение. И показываю, как забрать свою часть этого движения.</p>
+								</div>
 							</div>
-							<div class="sCatalog__col col-3">
-								<article class="product-item">
-									<a class="product-item__img-wrap" href="#">
-										<div class="img-wrap-center"> <img src="img/prod-3.jpg" alt="" loading="lazy"/>
-										</div>
-									</a>
-									<div class="product-item__caption">
-										<div class="product-item__title">
-										</div>
-										<div class="product-item__text">
-										</div>
-										<div class="product-item__price">
-										</div>
-										<a class="product-item__btn" href="#">
-										</a>
+						</div>
+						<div class="text-center h6 fw-500 mb-5"> Вот акции, которые я давал в течение одного месяца. <br> Посмотрите, здесь каждый день есть деньги.</div>
+						<div class="def-slider def-swiper-js">
+							<div class="swiper">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide" data-fancybox="modal-slider-rev" data-src="img/slide.png"><img src="img/slide.png" alt="" loading="lazy"/>
 									</div>
-								</article>
-								<!-- /.product-item-->
+									<div class="swiper-slide" data-fancybox="modal-slider-rev" data-src="img/slide.png"><img src="img/slide.png" alt="" loading="lazy"/>
+									</div>
+									<div class="swiper-slide" data-fancybox="modal-slider-rev" data-src="img/slide.png"><img src="img/slide.png" alt="" loading="lazy"/>
+									</div>
+								</div>
 							</div>
-							<div class="sCatalog__col col-3">
-								<article class="product-item">
-									<a class="product-item__img-wrap" href="#">
-										<div class="img-wrap-center"> <img src="img/prod-4.jpg" alt="" loading="lazy"/>
-										</div>
-									</a>
-									<div class="product-item__caption">
-										<div class="product-item__title">
-										</div>
-										<div class="product-item__text">
-										</div>
-										<div class="product-item__price">
-										</div>
-										<a class="product-item__btn" href="#">
-										</a>
-									</div>
-								</article>
-								<!-- /.product-item-->
+							<div class="control-wrap">
+								<div class="swiper-button-hand swiper-button-hand-prev swiper-button-prev">
+									<svg class="icon icon-chevron-left ">
+										<use xlink:href="img/svg/sprite.svg#chevron-left"></use>
+									</svg>
+								</div>
+								<div class="swiper-button-hand swiper-button-hand-next swiper-button-next">
+									<svg class="icon icon-chevron-right ">
+										<use xlink:href="img/svg/sprite.svg#chevron-right"></use>
+									</svg>
+								</div>
+								<div class="swiper-pagination"></div>
 							</div>
-							<div class="sCatalog__col col-3">
-								<article class="product-item">
-									<a class="product-item__img-wrap" href="#">
-										<div class="img-wrap-center"> <img src="img/prod-5.jpg" alt="" loading="lazy"/>
-										</div>
-									</a>
-									<div class="product-item__caption">
-										<div class="product-item__title">
-										</div>
-										<div class="product-item__text">
-										</div>
-										<div class="product-item__price">
-										</div>
-										<a class="product-item__btn" href="#">
-										</a>
-									</div>
-								</article>
-								<!-- /.product-item-->
+						</div>
+						<div class="text-center my-5 h3 ttu">Мечтаете зарабатывать каждый день на движении рынка?
+							<div class="text-primary">Читайте дальше внимательно, я покажу, как это делать пошагово</div>
+						</div>
+					</div>
+				</section>
+				<!-- start sKnowBefore-->
+				<section class="sKnowBefore dark-bg section" id="sKnowBefore">
+					<div class="container">
+						<div class="section-title">
+							<h2><span class="text-primary">Как знать заранее, </span><br/>какие акции сегодня  вырастут?</h2>
+						</div>
+						<p style="color: #a1a1a1; max-width: 990px">Каждый день на рынке США появляются десятки акций, которые “взрываются” по волатильности – двигаются и дают возможность заработать уже в первые 30–60 минут торгов.</p>
+						<div class="sKnowBefore__block">
+							<div class="h3"> <span class="text-primary">Волатильность </span>– это момент, когда  рынок готов платить.</div>
+							<p><span>Это энергия</span>, которую можно превращать в деньги.<br/>И она появляется <span>каждый день</span>.<br/>Я знаю, как <span>находить такие акции заранее</span>, в самом начале торговой сессии.<br/>И как <span>спокойно забирать рост</span>, когда он уже начался.</p>
+						</div>
+						<ul>
+							<li>Каждый день <br/>новый список <br/>акций</li>
+							<li>Каждый день<br/>новая возможность <br/>получить профит</li>
+							<li>Никаких догадок. <br/>Никаких <br/>«мне кажется»</li>
+						</ul>
+						<div class="text-center mb-5">
+							<p style="color: #a1a1a1">Я не предсказываю будущее. Я просто вижу, какая акция даёт возможность заработать. <br> Вижу момент, когда она начинает расти. И присоединяюсь к этому движению.</p>
+							<div class="h3 ttu">Это даёт возможность торговать спокойно, предсказуемо и стабильно, шаг за шагом.</div>
+						</div>
+						<div class="sKnowBefore__footer-row row">
+							<div class="col">
+								<div class="h3 ttu">Когда я разрабатывал эту систему, я хотел убрать всё лишнее: догадки, стресс, импульсивность. Получилось просто и красиво. Каждый день рынок даёт шанс. Нужно лишь знать, где он начинается. И забрать своё</div>
 							</div>
-							<div class="sCatalog__col col-3">
-								<article class="product-item">
-									<a class="product-item__img-wrap" href="#">
-										<div class="img-wrap-center"> <img src="img/prod-6.jpg" alt="" loading="lazy"/>
-										</div>
-									</a>
-									<div class="product-item__caption">
-										<div class="product-item__title">
-										</div>
-										<div class="product-item__text">
-										</div>
-										<div class="product-item__price">
-										</div>
-										<a class="product-item__btn" href="#">
-										</a>
-									</div>
-								</article>
-								<!-- /.product-item-->
+							<div class="col-md-auto text-center"><img src="img/author.png" alt="" loading="lazy"/>
 							</div>
-							<div class="sCatalog__col col-3">
-								<article class="product-item">
-									<a class="product-item__img-wrap" href="#">
-										<div class="img-wrap-center"> <img src="img/prod-7.jpg" alt="" loading="lazy"/>
-										</div>
-									</a>
-									<div class="product-item__caption">
-										<div class="product-item__title">
-										</div>
-										<div class="product-item__text">
-										</div>
-										<div class="product-item__price">
-										</div>
-										<a class="product-item__btn" href="#">
-										</a>
+						</div>
+					</div>
+				</section>
+				<!-- end sKnowBefore-->
+				<!-- start sStudy-->
+				<section class="sStudy section" id="sStudy">
+					<div class="container">
+						<div class="section-title">
+							<h2><span class="text-primary">Научитесь превращать</span><br/>волатильность в ежедневные деньги</h2>
+						</div>
+						<div class="sStudy__group mb-5">
+							<div class="h3 ttu mb-4">Приглашаю Вас на онлайн-практикум <span class="text-primary">«Сбор волатильности»</span>— </div>
+							<div class="h6 fw-400">это простая, логичная и предсказуемая методика, построенная на одном принципе:</div>
+						</div>
+						<div class="sStudy__group mb-5">
+							<div class="h3 ttu mb-4">Если акция движется — <span class="text-primary">забери движение</span></div>
+							<div class="h6 fw-400">Вы сможете забирать 5–10% в день на американских акциях, не пытаясь угадать рынок и не проводя жизнь у монитора.</div>
+						</div>
+						<div class="h25 mb-5">Почему эта методика работает для всех, 
+							<div class="text-primary">даже для новичков?</div>
+						</div>
+						<ul>
+							<li> 
+								<div class="h3">Простая система, доступная каждому</div>
+								<div class="h6 fw-400">Вы заранее знаете, в каких акциях сегодня появится волатильность. Без догадок, без «интуиции», без магии.</div>
+							</li>
+							<li> 
+								<div class="h3"> Готовые сценарии торговли и работа по чек-листу.</div>
+								<div class="h6 fw-400">Прописанные сценарии поведения акции – без двусмысленностей и кривотолков.<br/>Вход и выход по понятным признакам.<br/>Никакого хаоса, только чёткие шаги.</div>
+							</li>
+							<li> 
+								<div class="h3"> Новые акции каждый день с предсказуемым поведением.</div>
+								<div class="h6 fw-400">Акции, отобранные по правилам стратегии, ведут себя одинаково.<br/>Это даёт возможность зарабатывать ежедневно.</div>
+							</li>
+							<li> 
+								<div class="h3"> 1 час в день, и Вы свободны</div>
+								<div class="h6 fw-400">Работа в первые 30–60 минут американской сессии.<br/>Можно торговать не каждый день, а только когда удобно.</div>
+							</li>
+							<li> 
+								<div class="h3">Без лишних сложностей и надоевших индикаторов</div>
+								<div class="h6 fw-400">Стратегия построена на уровнях и механике рынка.<br/>Без головоломок, без десятка экранов, без перегрузки.</div>
+							</li>
+						</ul>
+						<div class="sStudy__block">
+							<div class="h25 mb-4">То, что удивляет всех учеников с первых дней</div>
+							<div class="h3">Система настолько проста, что многим… скучно. Но именно эта простота и есть причина стабильных результатов. Главное – не суетиться.</div>
+							<div class="h3">Стратегия сама показывает, когда входить и когда забирать прибыль.</div>
+							<p>Хотите получить ключ к ежедневным деньгам в трейдинге?</p><a class="btn btn-primary" href="#sForm">Жмите, чтобы оформить моментальный доступ </a><img src="img/study.png" alt="" loading="lazy"/>
+						</div>
+					</div>
+				</section>
+				<!-- end sStudy-->
+				<!-- start sSimple-->
+				<section class="sSimple section" id="sSimple">
+					<div class="container">
+						<div class="section-title">
+							<h2><span class="text-primary">Простой механизм, </span><br/>который ведёт Вас к прибыли <br/>в 4 шага</h2>
+						</div>
+						<div class="h3 ttu mb-5">На американском рынке каждый день есть акции, который двигаются с высокой волатильностью. Если акция движется – значит, там есть возможность заработать.<br/><span class="text-primary">Всё, что нужно – пройти 4 простых шага.</span></div>
+						<div class="sSimple__row row mb-5">
+							<div class="col-lg-6">
+								<div class="sSimple__item h-100">
+									<div class="sSimple__step">Шаг
 									</div>
-								</article>
-								<!-- /.product-item-->
+									<div class="h3">Находим волатильность</div>
+									<p>В начале американской сессии скринер TradingView с моими настройками показывает, где сегодня ожидается движение. Он отсекает весь шум и оставляет только живые акции.</p>
+									<p>з тысяч тикеров остаются 3–10, в которых есть реальный потенциал. Не «возможно завтра». А сегодня.</p>
+								</div>
 							</div>
-							<div class="sCatalog__col col-3">
-								<article class="product-item">
-									<a class="product-item__img-wrap" href="#">
-										<div class="img-wrap-center"> <img src="img/prod-8.jpg" alt="" loading="lazy"/>
-										</div>
-									</a>
-									<div class="product-item__caption">
-										<div class="product-item__title">
-										</div>
-										<div class="product-item__text">
-										</div>
-										<div class="product-item__price">
-										</div>
-										<a class="product-item__btn" href="#">
-										</a>
+							<div class="col-lg-6">
+								<div class="sSimple__item h-100">
+									<div class="sSimple__step">Шаг
 									</div>
-								</article>
-								<!-- /.product-item-->
+									<div class="h3">Отбираем акции, которые могут принести прибыль</div>
+									<p>Наблюдаем за тикерами в торговом терминале. В первые 15 минут большинство отсеивается.</p>
+									<p>Остаётся 1–3 горячих акций, именно они дают возможность заработать</p>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="sSimple__item h-100">
+									<div class="sSimple__step">Шаг
+									</div>
+									<div class="h3">Ждём подтверждения роста</div>
+									<p>Перед ростом акции ведут себя одинаково. Вы ждёте знакомую картину и видите, когда начинается движение вверх.</p>
+									<p>Вход в сделку однозначный и очевидный. Его трудно пропустить</p>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="sSimple__item h-100">
+									<div class="sSimple__step">Шаг
+									</div>
+									<div class="h3">Фиксируем прибыль</div>
+									<p>Когда движение заканчивается, рынок сам подсказывает, когда выйти. Вы забираете прибыль и завершаете торговлю на сегодня.</p>
+									<p>Завтра будут новые акции. И новые возможности</p>
+								</div>
+							</div>
+						</div>
+						<div class="text-center mb-5">
+							<div class="h3 mb-5">Всё просто: рынок даёт волатильность, Вы её собираете.
+								<div class="text-primary">Стратегия приносит результат не когда-нибудь, а сегодня.</div>
+							</div>
+							<div class="h6-fw-400 mb-4">Смотрите, как стратегия работает в реальном времени.<br> Эти сделки записаны на видео прямо в процессе торговли.</div>
+						</div>
+						<div class="sSimple__video-row row mb-5">
+							<div class="sSimple__col col-md-6">
+								<div class="sSimple__video">
+									<iframe src="https://kinescope.io/e2XNJwJpavG2tdvfcveMaD" loading="lazy" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="allowfullscreen"></iframe>
+								</div>
+							</div>
+							<div class="sSimple__col col-md-6">
+								<div class="sSimple__video">
+									<iframe src="https://kinescope.io/2CoZJRViBWw4zcEafmSN9V" loading="lazy" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="allowfullscreen"></iframe>
+								</div>
+							</div>
+							<div class="sSimple__col col-md-6">
+								<div class="sSimple__video">
+									<iframe src="https://kinescope.io/e2XNJwJpavG2tdvfcveMaD" loading="lazy" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="allowfullscreen"></iframe>
+								</div>
+							</div>
+							<div class="sSimple__col col-md-6">
+								<div class="sSimple__video">
+									<iframe src="https://kinescope.io/2CoZJRViBWw4zcEafmSN9V" loading="lazy" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="allowfullscreen"></iframe>
+								</div>
+							</div>
+						</div>
+						<div class="sSimple__block">
+							<div class="h25 mb-3">Готовы перейти от теории к практике?</div>
+							<div class="h3 mb-3">Механика проста, шаги однозначны. Теперь Вы увидели, как это работает на реальных графиках.</div>
+							<div class="h6 mb-4">Следующий шаг: </div><a class="btn btn-primary" href="#sForm">Начать зарабатывать на своём счете </a>
+						</div>
+					</div>
+				</section>
+				<!-- end sSimple-->
+				<!-- start sGet-->
+				<section class="sGet section" id="sGet">
+					<div class="container">
+						<div class="section-title">
+							<h2><span class="text-primary">Не гадайте. Забирайте то, </span><br/>что рынок отдаёт сам</h2>
+						</div>
+						<div class="h6 fw-400 mb-3">Пока большинство трейдеров ждут «идеальный момент», мы работаем там, где логика  и вероятность на нашей стороне.</div>
+						<div class="h6 fw-400 mb-5">На рынке США каждый день десятки акций совершают сильные внутридневные движения. В основе стратегии «Сбор волатильности» именно эти движения.</div>
+						<div class="h25 mb-4">Почему торговая стратегия даёт <br> предсказуемый результат?</div>
+						<ul>
+							<li> 
+								<div class="h3">Мы не гонимся за рынком</div>
+								<div class="h6 fw-400">Мы берём только ту часть движения, которая подтверждена реальной волатильностью</div>
+							</li>
+							<li> 
+								<div class="h3"> Мы ищем не «сигналы», а предсказуемую механику</div>
+								<div class="h6 fw-400">Если акция начинает движение, рынок сам показывает, что в ней есть энергия. Наша задача – забрать часть этого движения</div>
+							</li>
+							<li> 
+								<div class="h3">Стратегия заранее показывает, где сегодня появится волатильность</div>
+								<div class="h6 fw-400">Уже в первую минуту торговой сессии Вы точно знаете, за какими акциями нужно наблюдать. Из тысяч тикеров остаются только те, где есть потенциал</div>
+							</li>
+							<li> 
+								<div class="h3"> Авторский индикатор MT5 убирает сомнения</div>
+								<div class="h6 fw-400">Он показывает, какие акции нельзя трогать и где вероятность роста выше всего</div>
+							</li>
+							<li> 
+								<div class="h3">Момент входа и момент выхода — однозначны</div>
+								<div class="h6 fw-400">Мы входим перед началом роста по узнаваемой картине. И выходим, когда движение выдыхается – рынок сам это показывает</div>
+							</li>
+						</ul>
+						<div class="sGet__block">
+							<div class="h25 mb-4">Логично. Спокойно. Предсказуемо</div>
+							<p class="mb-4">Это не удача. Это механика рынка.</p><a class="btn btn-primary" href="#sForm">Хочу торговать предсказуемо</a>
+						</div>
+					</div>
+				</section>
+				<!-- end sGet-->
+				<!-- start sStrategies-->
+				<section class="sStrategies section dark-bg" id="sStrategies">
+					<div class="container">
+						<div class="section-title">
+							<h2>Тактико-технические  характеристики стратегии  <span class="text-primary">«Сбор волатильности»</span></h2>
+						</div>
+						<ul>
+							<li class="main-list-item"> 
+								<div class="h3"> Рынки и условия работы</div>
+								<ul>
+									<li>Рынки: NYSE, NASDAQ</li>
+									<li>Минимальный депозит: от $200</li>
+									<li>Работаем внутри дня, без переноса позиций</li>
+									<li>Время торговли: 1 час в день, начало американской сессии в 17:30 МСК (зима)</li>
+									<li>Можно торговать не каждый день, только в удобные Вам дни</li>
+								</ul>
+							</li>
+							<li class="main-list-item"> 
+								<div class="h3">Принципы и механика стратегии</div>
+								<ul>
+									<li>Работа по чек-листу – заранее известные сценарии входа</li>
+									<li>Вход и выход основаны на рыночной механике, без догадок</li>
+									<li>Не нужны запаздывающие индикаторы, работа на ценовых уровнях</li>
+									<li>Риск в сделке: 1–4%</li>
+									<li>Средняя длительность сделки: 10–30 минут</li>
+								</ul>
+							</li>
+							<li class="main-list-item"> 
+								<div class="h3">Результаты и потенциал</div>
+								<ul>
+									<li>Прибыль в сделке: от 2% до 40% (и выше), средняя сделка — +5% к депозиту</li>
+									<li>Потенциал стратегии: от +30% в месяц</li>
+									<li>Потенциал отдельного дня не имеет верхней границы, иногда рынок даёт особенно сильное движение</li>
+								</ul>
+							</li>
+							<div class="h3 text-center mb-5">Примеры сильных дней</div>
+							<div class="def-slider def-swiper-js">
+								<div class="swiper">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide" data-fancybox="modal-slider-rev" data-src="img/slide.png"><img src="img/slide.png" alt="" loading="lazy"/>
+										</div>
+										<div class="swiper-slide" data-fancybox="modal-slider-rev" data-src="img/slide.png"><img src="img/slide.png" alt="" loading="lazy"/>
+										</div>
+										<div class="swiper-slide" data-fancybox="modal-slider-rev" data-src="img/slide.png"><img src="img/slide.png" alt="" loading="lazy"/>
+										</div>
+									</div>
+								</div>
+								<div class="control-wrap">
+									<div class="swiper-button-hand swiper-button-hand-prev swiper-button-prev">
+										<svg class="icon icon-chevron-left ">
+											<use xlink:href="img/svg/sprite.svg#chevron-left"></use>
+										</svg>
+									</div>
+									<div class="swiper-button-hand swiper-button-hand-next swiper-button-next">
+										<svg class="icon icon-chevron-right ">
+											<use xlink:href="img/svg/sprite.svg#chevron-right"></use>
+										</svg>
+									</div>
+									<div class="swiper-pagination"></div>
+								</div>
+							</div>
+							<div class="text-center pt-3"><a class="btn btn-primary" href="#sForm">Выбрать версию участия</a></div>
+						</ul>
+					</div>
+				</section>
+				<!-- end sStrategies-->
+				<!-- start sWhyEveryday-->
+				<section class="sWhyEveryday section" id="sWhyEveryday">
+					<div class="container">
+						<div class="section-title">
+							<h2>Почему для ежедневной прибыли нужен именно  <span class="text-primary">рынок США?</span></h2>
+						</div>
+						<div class="h6 fw-400 mb-5">Чтобы зарабатывать в трейдинге каждый день, нужен рынок, где ежедневно присутствует высокая волатильность. Большинство рынков этому не соответствует.</div>
+						<div class="sWhyEveryday__row row">
+							<div class="col-12">
+								<div class="sWhyEveryday__item">
+									<div class="h3">Почему другие рынки не подходят:</div>
+									<ul>
+										<li>Российский рынок – периоды движения часто сменяются затишьем.</li>
+										<li>Форекс – волатильность зависит от мировых событий, нет стабильности.</li>
+										<li>Криптовалюты – движения есть, но они хаотичны и трудно прогнозируемы.</li>
+										<li>Металлы и сырьё – работают циклами, а не ежедневно.</li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-12">
+								<div class="sWhyEveryday__item">
+									<div class="h3">Американский рынок – самый крупный и ликвидный в мире:</div>
+									<ul>
+										<li>более 11 000 акций,</li>
+										<li>ежедневно десятки тикеров показывают сильные внутридневные движения,</li>
+										<li>высокая ликвидность и прозрачная механика,</li>
+										<li>стабильная волатильность, подходящая для внутридневной торговли</li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-lg-6 py-3">
+								<div class="h3">Говоря простым языком, среди <span class="text-primary">11 000 акций</span> каждый день есть те, которые растут  с высокой волатильностью.</div>
+							</div>
+							<div class="col-lg-6 py-3">
+								<div class="h3">Именно поэтому стратегия «Сбор волатильности» <br/><span class="text-primary">даёт результат именно здесь</span>.</div>
+							</div>
+							<div class="h25 py-3">Как получить доступ к американским акциям? </div>
+							<div class="col-lg-6">
+								<div class="sWhyEveryday__item h-100">
+									<div class="h3">Если вы из РФ</div>
+									<p>Самое простое решение – брокер Just2Trade:</p>
+									<ul>
+										<li>надёжный брокер с многолетней репутацией,</li>
+										<li>понимает запросы российских клиентов,</li>
+										<li>предоставляет доступ ко всем необходимым акциям,</li>
+										<li>даёт бесплатный терминал MetaTrader 5,</li>
+										<li>удобный ввод и вывод средств.</li>
+									</ul>
+									<p>Альтернативы:</p>
+									<ul>
+										<li>Финам – нужен статус квалифицированного инвестора, ограниченный список акций.</li>
+										<li>Interactive Brokers – возможны сложности с вводом/выводом средств из РФ.</li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="sWhyEveryday__item h-100">
+									<div class="h3">Если вы <span class="text-primary">не</span> из РФ</div>
+									<p>Подойдёт любой брокер, который даёт полный доступ к рынкам NYSE и NASDAQ:</p>
+									<ul>
+										<li>Just2Trade</li>
+										<li>Interactive Brokers</li>
+										<li>Freedom24</li>
+										<li>другие международные брокеры</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- end sWhyEveryday-->
+				<!-- start sAuthor-->
+				<section class="sAuthor dark-bg section" id="sAuthor">
+					<div class="container">
+						<div class="h3 mb-5" style="color: #a1a1a1;">Обо мне</div>
+						<div class="sAuthor__caption">
+							<div class="section-title">
+								<div class="h25"><span class="text-primary">Меня зовут Станислав Добровский.</span> Я торгую с 2006 года и научу Вас зарабатывать спокойно.</div>
+							</div>
+							<ul class="mb-5">
+								<li>Эта комбинация помогает мне не только находить лучшие рыночные возможности, но и учить людей работать без стресса, суеты и догадок</li>
+								<li>Я частный трейдер с 20-летним опытом и практикующий психолог</li>
+								<li>Мой путь к стратегии «Сбор волатильности» начался почти 10 лет назад</li>
+								<li>Я искал способ зарабатывать в трейдинге от +30% к депозиту в месяц без нервов и больших затрат времени. Я самостоятельно пришёл к способу находить акции, которые дают движение именно сегодня</li>
+								<li>В 2020 году систематизировал этот подход в пошаговую модель, дающую результат здесь и сейчас, без прогноза и без хаоса</li>
+								<li>В 2025 году составил карту сценариев поведения волатильной акции, на основе которой и родилась торговая стратегия «Сбор волатильности»</li>
+							</ul>
+						</div>
+						<div class="h3 mb-5">Почему мои ученики <span class="text-primary">получают результаты</span> уже во время обучения</div>
+						<ol class="mb-5">
+							<li>Потому что здесь нет случайностей, только механика рынка</li>
+							<li>Потому что мы работаем по готовым сценариям, без догадок</li>
+							<li>Потому что в моём обучении нет сухой теории, только живая практика</li>
+							<li>Потому что для получения результата нужен всего один торговый день</li>
+						</ol><img class="author-img" src="img/autor-block.png" alt="" loading="lazy"/>
+						<div class="h3 mb-5 text-center">Отзывы учеников</div>
+						<div class="def-slider def-swiper-js">
+							<div class="swiper">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide" data-fancybox="modal-slider-rev" data-src="img/slide.png"><img src="img/slide.png" alt="" loading="lazy"/>
+									</div>
+									<div class="swiper-slide" data-fancybox="modal-slider-rev" data-src="img/slide.png"><img src="img/slide.png" alt="" loading="lazy"/>
+									</div>
+									<div class="swiper-slide" data-fancybox="modal-slider-rev" data-src="img/slide.png"><img src="img/slide.png" alt="" loading="lazy"/>
+									</div>
+								</div>
+							</div>
+							<div class="control-wrap">
+								<div class="swiper-button-hand swiper-button-hand-prev swiper-button-prev">
+									<svg class="icon icon-chevron-left ">
+										<use xlink:href="img/svg/sprite.svg#chevron-left"></use>
+									</svg>
+								</div>
+								<div class="swiper-button-hand swiper-button-hand-next swiper-button-next">
+									<svg class="icon icon-chevron-right ">
+										<use xlink:href="img/svg/sprite.svg#chevron-right"></use>
+									</svg>
+								</div>
+								<div class="swiper-pagination"></div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- end sAuthor-->
+				<!-- start sProgram-->
+				<section class="sProgram section" id="sProgram">
+					<div class="container">
+						<div class="section-title">
+							<h2><span class="text-primary">Как Вы будете обучаться: </span>системный подход от первого шага до реальных сделок</h2>
+						</div>
+						<div class="h6 fw-400 mb-5">Чтобы Вы действительно вышли на результат, я собрал обучение по принципу «всё-в-одном». В программе обучения нет лишних материалов, только то, что даёт прибыльную торговлю  в ближайшие дни.</div>
+						<div class="item mb-5">
+							<div class="row">
+								<div class="col">
+									<div class="h3">Вы получите:</div>
+									<ul>
+										<li>онлайн-занятия, где можно задавать вопросы,</li>
+										<li>авторский индикатор для MT5,</li>
+										<li>ек-лист трейдера,</li>
+										<li>открытый Telegram-канал с ежедневной практикой,</li>
+										<li>мастер-группу с работой на реальном рынке,</li>
+										<li>анализ Ваших сделок,</li>
+										<li>поддержку лично от меня,</li>
+										<li>общество единомышленников.</li>
+									</ul>
+								</div>
+								<div class="col-auto">
+									<div class="sProgram__aside h3">Это полноценная система, <span class="text-primary">которая шаг за шагом доведёт Вас до самостоятельной работы по стратегии</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="h25 mb-5">Программа основного обучения</div>
+						<div class="h6 fw-400 mb-5">Обучение проходит в онлайн-формате. Записи всех занятий остаются с Вами навсегда</div>
+						<div class="dd-group dd-group-js">
+							<div class="dd-group__item">
+								<div class="dd-group__head dd-head-js">
+									<div>
+										<div class="dd-group__title">Первичный отбор акций
+										</div>
+										<div class="text-secondary"></div>
+									</div>
+									<div class="dd-group__arrow">
+									</div>
+								</div>
+								<div class="dd-group__content dd-content-js">
+									<p>Что Вы получите в этом модуле:</p>
+									<ul>
+										<li>Полное понимание, кто такой брокер и как выбрать того, кто даёт полный доступ к NYSE и NASDAQ.</li>
+										<li>Инструкции по открытию торгового счета для резидентов и нерезидентов РФ.</li>
+										<li>Пошаговую настройку торговой платформы: от установки до рабочего шаблона.</li>
+										<li>Умение покупать и продавать акции, правильно выставлять ордера.</li>
+										<li>Решение вопроса задержек котировок и как работать с реальными данными.</li>
+										<li><span class="text-primary">Главный навык первичного отбора акций</span>, который понадобится Вам каждый день.</li>
+										<li><span class="text-primary">Как находить именно те акции, где сегодня появится волатильность?</span></li>
+										<li><span class="text-primary">Обзор скринера TradingView для быстрого отбора акций.</span></li>
+										<li><span class="text-primary">Готовые настройки скринера</span>, чтобы Вы могли использовать его сразу после занятия.</li>
+									</ul>
+									<p>Что это даст Вам:</p>
+									<ul>
+										<li>Вы перестанете теряться в сотнях тикеров и будете видеть <span class="text-primary">конкретный список акций, которые дадут движение сегодня.</span></li>
+										<li>Сможете уверенно работать в терминале и не бояться «не туда нажать».</li>
+										<li>Будете каждый день начинать торговлю правильно, с чёткого, структурированного отбора.</li>
+										<li>Подготовитесь к работе по стратегии так, чтобы уже в первый день реальной торговли всё выглядело знакомо и понятно.</li>
+									</ul>
+								</div>
+							</div>
+							<div class="dd-group__item">
+								<div class="dd-group__head dd-head-js">
+									<div>
+										<div class="dd-group__title">Основы
+										</div>
+										<div class="text-secondary"></div>
+									</div>
+									<div class="dd-group__arrow">
+									</div>
+								</div>
+								<div class="dd-group__content dd-content-js">
+									<p>Что Вы получите в этом модуле:</p>
+									<ul>
+										<li>Поймёте, что такое линии 0 и 1 – ключевые уровни, которые определяют структуру движения цены.</li>
+										<li>Узнаете, что такое «запрещённая зона» и почему в ней категорически нельзя входить в сделки.</li>
+										<li>На наглядных примерах разберём минимум, повышенный минимум, флэт и их значение в контексте волатильности.</li>
+										<li>Получите базовый фундамент, без которого невозможно разобраться в механике рынка.</li>
+									</ul>
+									<p>Что это даст Вам:</p>
+									<ul>
+										<li>Вы начнёте видеть на графике не хаос, а структуру.</li>
+										<li>Поймёте, где рынок сильный, где слабый, где безопасно входить, а где лучше пропустить сделку.</li>
+										<li>Сразу сможете отличать рабочие движения от ложных шумов.</li>
+									</ul>
+								</div>
+							</div>
+							<div class="dd-group__item">
+								<div class="dd-group__head dd-head-js">
+									<div>
+										<div class="dd-group__title">Сценарий A – низкий вход
+										</div>
+										<div class="text-secondary"></div>
+									</div>
+									<div class="dd-group__arrow">
+									</div>
+								</div>
+								<div class="dd-group__content dd-content-js">
+									<p>Что Вы получите в этом модуле:</p>
+									<ul>
+										<li>Пошаговую структуру входа в сделку после снижения цены.</li>
+										<li>Чёткие правила постановки стоп-лосса.</li>
+										<li>Алгоритм перевода сделки в безубыток.</li>
+										<li>Большое количество примеров на таймфреймах M1/M5, чтобы Вы узнали этот сценарий в реальном времени.</li>
+									</ul>
+									<p>Что это даст Вам:</p>
+									<ul>
+										<li>Вы сможете входить в сделку в момент, когда цена заканчивает падение и готова развернуться.</li>
+										<li>Избавитесь от страха «а вдруг цена пойдёт ниже».</li>
+										<li>Начнёте брать сильные разворотные движения без догадок.</li>
+									</ul>
+								</div>
+							</div>
+							<div class="dd-group__item">
+								<div class="dd-group__head dd-head-js">
+									<div>
+										<div class="dd-group__title">Сценарий B – высокий вход
+										</div>
+										<div class="text-secondary"></div>
+									</div>
+									<div class="dd-group__arrow">
+									</div>
+								</div>
+								<div class="dd-group__content dd-content-js">
+									<p>Что Вы получите в этом модуле:</p>
+									<ul>
+										<li>Полную структуру входа после роста цены.</li>
+										<li>Чёткие признаки, по которым можно отличить ложный рост от настоящего.</li>
+										<li>Пошаговую логику постановки стопа и правила управления позицией.</li>
+									</ul>
+									<p>Что это даст Вам:</p>
+									<ul>
+										<li>Вы научитесь безопасно присоединяться к сильному движению по тренду.</li>
+										<li>Сможете избегать ложных импульсов, которые уводят депозит в минус у неопытных трейдеров.</li>
+										<li>Повысите стабильность торговых дней за счёт входов с высокой вероятностью отработки.</li>
+									</ul>
+								</div>
+							</div>
+							<div class="dd-group__item">
+								<div class="dd-group__head dd-head-js">
+									<div>
+										<div class="dd-group__title">Выход и фиксация прибыли
+										</div>
+										<div class="text-secondary"></div>
+									</div>
+									<div class="dd-group__arrow">
+									</div>
+								</div>
+								<div class="dd-group__content dd-content-js">
+									<p>Что Вы получите в этом модуле:</p>
+									<ul>
+										<li>Поймёте, что такое модель «две вершины» и почему она работает на волатильных акциях.</li>
+										<li>Узнаете, как не пропустить разворот движения.</li>
+										<li>Разберём стратегии выхода. Частями или полностью?</li>
+										<li>Получите чёткие критерии завершения сделки.</li>
+									</ul>
+									<p>Что это даст Вам:</p>
+									<ul>
+										<li>Вы перестанете пересиживать и отдавать прибыль назад рынку.</li>
+										<li>Начнёте фиксировать результат вовремя – там, где рынок действительно завершает движение.</li>
+										<li>Сможете закрывать сделки спокойно, уверенно и без стресса.</li>
+									</ul>
+								</div>
+							</div>
+							<div class="dd-group__item">
+								<div class="dd-group__head dd-head-js">
+									<div>
+										<div class="dd-group__title">Опасности и дисциплина
+										</div>
+										<div class="text-secondary"></div>
+									</div>
+									<div class="dd-group__arrow">
+									</div>
+								</div>
+								<div class="dd-group__content dd-content-js">
+									<p>Что Вы получите в этом модуле:</p>
+									<ul>
+										<li>Три типа рыночных опасностей, которые запрещают торговлю.</li>
+										<li>Понимание, что делать при срабатывании стопа и как сохранять торговое состояние.</li>
+										<li>Ключевое правило: «Если неясно – не входи».</li>
+										<li>Полный набор стоп-ситуаций, которые экономят деньги и нервы.</li>
+									</ul>
+									<p>Что это даст Вам:</p>
+									<ul>
+										<li>Вы перестанете входить в сделки “ради входа”.</li>
+										<li>Избавитесь от импульсивных действий и эмоциональных ошибок.</li>
+										<li>Начнёте торговать только тогда, когда есть высокий шанс заработать, и пропускать всё лишнее.</li>
+									</ul>
+								</div>
+							</div>
+							<div class="dd-group__item">
+								<div class="dd-group__head dd-head-js">
+									<div>
+										<div class="dd-group__title">Чек-лист сделки
+										</div>
+										<div class="text-secondary"></div>
+									</div>
+									<div class="dd-group__arrow">
+									</div>
+								</div>
+								<div class="dd-group__content dd-content-js">
+									<p>Что Вы получите в этом модуле:</p>
+									<ul>
+										<li>Пошаговый чек-лист от первого взгляда на график до выхода из сделки.</li>
+										<li>Однозначный алгоритм входа, без «вариантов» и без субъективности.</li>
+										<li>Дорожную карту трейдера: «Как должен выглядеть рабочий день по стратегии».</li>
+									</ul>
+									<p>Что это даст Вам:</p>
+									<ul>
+										<li>Вы будете торговать спокойно, уверенно и однообразно.</li>
+										<li>Перестанете сомневаться в каждом шаге, просто выполняете чек-лист.</li>
+										<li>Ваша торговля станет стабильной и предсказуемой.</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="row g-1 mb-5">
+							<div class="col-lg-6">
+								<div class="sProgram__item">
+									<div class="h3"><span class="text-primary">Авторский индикатор</span> для MT5</div>
+									<p>Чтобы Вам было проще и точнее работать, я даю Вам свой индикатор. Он:</p>
+									<ul>
+										<li>сам рисует необходимые уровни,</li>
+										<li>показывает запрещенную зону,</li>
+										<li>показывает объём и волатильность,</li>
+										<li>подсказывает, какие акции трогать нельзя,</li>
+										<li>автоматически рассчитывает размер позиции.</li>
+									</ul>
+									<p>Это инструмент, который экономит Ваше время, убирает сомнения и добавляет уверенности</p>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="sProgram__item">
+									<div class="h3"><span class="text-primary">Мастер</span>-группа</div>
+									<p><strong>3 месяца</strong> практического сопровождения на реальном рынке. <strong> 6 онлайн-занятий +</strong> записи навсегда.</p>
+									<p><strong>Каждые 2 недели</strong> мы будем собираться в прямом эфире: обсуждать рынок, сделки и Ваши отчеты.</p>
+									<p><strong>Буду оказывать поддержку и отвечать на Ваши вопросы в группе Инфоклуба.</strong> Вы сможете присылать мне скриншоты своих сделок и советоваться со мной по торговым ситуациям.</p>
+									<p><strong>За эти 3 месяца я помогу Вам разобраться со всеми дополнительными вопросами,</strong> которые неизбежно появляются во время практической торговли.</p>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="sProgram__item">
+									<div class="h3">Закрытый <span class="text-primary">Телеграм-канал</span> для учеников</div>
+									<p>Каждый день я <strong>буду выкладывать потенциальные акции</strong> в рабочем Телеграм-канале</p>
+									<p>Каждый день после торговой сессии <strong>буду показывать точки входа и выхода</strong></p>
+									<p>Для Вас это будет <strong>лучшим практическим обучением</strong> и опорой в реальных торгах</p>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="sProgram__item">
+									<div class="h3"><span class="text-primary">Сообщество</span> учеников</div>
+									<p>В закрытой группе Инфоклуба будет работать <strong>форум для обсуждения рынка и сделок</strong></p>
+									<p><strong>Здесь я буду отвечать на Ваши вопросы</strong>, помогать с разбором сделок и торговых ситуаций</p>
+									<p><strong>Вы не останетесь один на один с графиком</strong>. Рядом сообщество, которое растёт вместе с Вами</p>
+								</div>
+							</div>
+						</div>
+						<div class="sSimple__block">
+							<div class="h3 mb-3 strong">После такого обучающего комплекта у Вас не останется ни одного шанса, чтобы не добиться результатов в реальной торговле.</div>
+							<div class="h6 mb-4">Главная цель – закрепить навыки реальной торговли, которые останутся с Вами навсегда и помогут Вам получать прибыль, пока будет существовать американский фондовый рынок.</div><a class="btn btn-primary" href="#sForm">Начать обучение сегодня </a>
+						</div>
+					</div>
+				</section>
+				<!-- end sProgram-->
+				<!-- start sNoticeYourself-->
+				<section class="sNoticeYourself section" id="sNoticeYourself">
+					<div class="container">
+						<div class="section-title">
+							<h2> <span class="text-primary">Узнаете себя? </span><br/>Тогда Вы точно на месте!</h2>
+						</div>
+						<div class="h6 fw-400 mb-5">Торговая стратегия «Сбор волатильности» идеально подходит людям разных уровней подготовки.</div>
+						<div class="h3 mb-5">Если хотя бы один пункт про Вас – <span class="text-primary">значит, Вы сможете работать по этой системе.</span></div>
+							<div class="sNoticeYourself__item"><img src="img/sNoticeYourself-icon-1.svg" alt="" loading="lazy"/>
+								<div class="sNoticeYourself__caption">
+									<div class="h3 mb-4">Если Вы <span class="text-primary">новичок</span></div>
+									<ul>
+										<li>Вам нужен простой пошаговый алгоритм «без вариантов».</li>
+										<li>Вы хотите сразу избежать периода ошибок и слива депозита.</li>
+										<li>Вам важно, чтобы всё было разложено «по полочкам» и без сложных терминов.</li>
+									</ul>
+								</div>
+							</div>
+							<div class="sNoticeYourself__item"><img src="img/sNoticeYourself-icon-2.svg" alt="" loading="lazy"/>
+								<div class="sNoticeYourself__caption">
+									<div class="h3 mb-4">Если вы <span class="text-primary">уже пробовали торговать</span>, но устали от хаоса</div>
+									<ul>
+										<li>Вам надоела торговля «на глаз» и постоянное угадывание.</li>
+										<li>Вы хотите чёткие правила, предсказуемый процесс и спокойный заработок.</li>
+										<li>Вы хотите зарабатывать системно, а не только в «удачные моменты».</li>
+										<li>Вы хотите перестать тратить нервы и начать торговать по структуре.</li>
+									</ul>
+								</div>
+							</div>
+							<div class="sNoticeYourself__item"><img src="img/sNoticeYourself-icon-3.svg" alt="" loading="lazy"/>
+								<div class="sNoticeYourself__caption">
+									<div class="h3 mb-4">Если Вы <span class="text-primary">практикующий трейдер</span></div>
+									<ul>
+										<li>Вы хотите выйти на новый уровень дохода, используя волатильность.</li>
+										<li>Вам нужна стратегия, которая даёт однозначные точки входа и выхода, без лишних вариантов.</li>
+										<li>Вы хотите добавить к своей торговле стабильность, структуру и предсказуемость.</li>
+										<li>Вам важно работать по системе, которая каждый день показывает, где сегодня есть движение</li>
+									</ul>
+								</div>
+							</div>
+							<div class="sNoticeYourself__item"><img src="img/sNoticeYourself-icon-4.svg" alt="" loading="lazy"/>
+								<div class="sNoticeYourself__caption">
+									<div class="h3 mb-4">Если Вы <span class="text-primary">занятой человек</span></div>
+									<ul>
+										<li>У Вас мало времени, нужен рабочий подход, который занимает всего 1 час в день.</li>
+										<li>Вы хотите зарабатывать без многочасового просиживания штанов у графиков.</li>
+										<li>Вам важно иметь возможность торговать только в те дни, когда удобно.</li>
+									</ul>
+								</div>
+							</div>
+						<div class="h25 mt-4 mb-3 mt-5">Я создал эту методику именно для таких трейдеров. Если Вы узнали себя – <span class="text-primary">значит, Вы будете чувствовать себя в ней как дома.</span></div>
+					</div>
+				</section>
+				<!-- end sNoticeYourself-->
+				<!-- start sWhy-->
+				<section class="sWhy section dark-bg" id="sWhy">
+					<div class="container">
+						<div class="section-title">
+							<div class="row">
+								<div class="col-xl-8">
+									<h2>Почему мои ученики выходят на&nbsp;результат, и&nbsp;Вы сможете</h2>
+								</div>
+								<div class="col">
+									<div class="h3">За годы практики я понял простую истину: <span class="text-primary">результат в трейдинге появляется тогда, когда есть система, которая не оставляет места сомнениям.</span></div>
+								</div>
+							</div>
+						</div>
+						<div class="h3 mb-5">Вот почему у Вас получится работать по моей стратегии:</div>
+						<ol class="mb-5">
+							<li>
+								<div class="h5">Простая и логичная система, без “магии” и догадок</div>
+								<p>Я убрал всё лишнее. Только проверенная механика рынка и чёткие шаги</p>
+							</li>
+							<li>
+								<div class="h5">Однозначные инструкции: вход, стоп, выход.</div>
+								<p>Вы всегда знаете, что делать: где можно торговать, где нельзя, когда входить и когда фиксировать прибыль</p>
+							</li>
+							<li>
+								<div class="h5">Быстрая отдача</div>
+								<p>Вы увидите результат работы стратегии уже в первый день реальной торговли. Это не теория, мы работаем на живом рынке</p>
+							</li>
+							<li>
+								<div class="h5">Личная поддержка на каждом этапе</div>
+								<p>Работаем каждый день на реальных акциях: от списка ежедневных тикеров до разбора Ваших сделок.</p>
+							</li>
+							<li>
+								<div class="h5">Дисциплина «в коробке»</div>
+								<p>Есть чек-лист, который исключает двоякие трактовки. Просто следуйте шагам, и торговля станет спокойной и предсказуемой</p>
+							</li>
+						</ol>
+						<div class="h3 mb-5" style="max-width: 800px;">
+							<div class="mb-2">Лучший отзыв, который я получил:</div><span class="text-primary">«Торговля стала спокойной: вижу, где нельзя, вижу, где можно, и делаю деньги».</span>
+						</div>
+						<div class="lg-text h2">
+							<div class="lg-text__item">И вы тоже сможете!
+							</div>
+							<div class="lg-text__item">Это просто
+							</div>
+							<div class="lg-text__item">Это спокойно
+							</div>
+							<div class="lg-text__item">Это логично
+							</div>
+							<div class="lg-text__item">И это каждый день!
+							</div><img src="img/sWhy-img.png" alt="" loading="lazy"/>
+						</div>
+						<div class="row mb-5">
+							<div class="col-xl-8">
+								<div class="h25">Получите доступ к стратегии 
+									<div class="text-primary">«Сбор волатильности» </div>прямо сейчас
+								</div>
+							</div>
+							<div class="col">
+								<div class="h3">Время – деньги. Если рынок сегодня движется, почему бы не забрать своё?</div>
+								<div class="h3 text-primary">Введите Ваши данные, выберите версию участию и получите моментальный доступ к обучению.</div>
+							</div>
+						</div>
+						<div class="form-wrap" id="sForm"><div id="bf349" class="inbfrm v2">
+<div id="bf349_inner"> 
+<form id="bf349_form" action="//info-dvd.ru/bbm/order/price_table_null_tradingvisionpro/?bform_id=349" method="POST" accept-charset="windows-1251" onsubmit="return bf349.check();" >
+<input type="hidden" name="good_id" value="price_table_null_tradingvisionpro">
+<input type="hidden" name="bform_id" value="349">
+<input type="hidden" name="comment_author" value="">
+<input type="hidden" name="comment_text" value="">
+<input type="hidden" name="promocode" value="">
+<div class="form-grid row gx-3 gy-3">
+<div class="col-lg-4"> 
+<div class="input_line form-group "> 
+<label class="input-label">Ваше имя</label>
+<input name="fullname" type="text" class="text form-control" value="" placeholder="Ваше имя" required="required"/>
+</div>
+</div>
+<div class="col-lg-4">
+<div class="input_line form-group ">  
+<label class="input-label">Номер телефона</label>
+<input name="phone" type="text" class="text form-control" value="" placeholder="+7 (____)____-___-___" required="required"/>
+</div>
+</div>
+<div class="col-lg-4">
+<div class="input_line form-group "> 
+<label class="input-label">E-mail</label>
+<input name="email" type="email" class="text form-control" value="" placeholder="E-mail (необязательно)" required="required"/>
+</div>
+</div>
+<div class="submit_line col-12">
+<button type="submit" class="button btn btn-primary w-100" name="submit" > Отправить</button>
+</div>
+</div>
+<div class="privacy_agreement_block">
+<label>
+<input type="checkbox" class="form-check-input" name="oferta_warn" value="1" checked="checked" required="required"> <span class="ibfm_txt">Я согласен с условиями</span> <a href="javascript:void(0)" onclick="return window['bf349'].popup(`https://info-dvd.ru/bbm/../../oferta?popup=1`, `win`, 1050, 450); return false;">публичной оферты</a>
+</label>
+</div>
+</form>
+</div>
+</div>
+							<script>
+								window.setTimeout(function() {
+									(function (d, w, src, r, c) {
+										var rid = r.toString().substr(2);
+										var n = d.getElementsByTagName("script")[0],s = d.createElement("script"),
+											f = function () { n.parentNode.insertBefore(s, n); };
+										var p=d.location.protocol;
+										if (p!='http:' && p!='https:' && src.indexOf('//')==0){src='http:'+src}
+										s.type = "text/javascript";
+										s.async = true;
+										s.src = src+(src.indexOf('?')==-1 ? '?' : '&')+'r='+rid;
+										if (w.opera == "[object Opera]") {
+											d.addEventListener("DOMContentLoaded", f, false);
+										} else {
+												f();
+											}
+										if (c) {
+											s.addEventListener('load', function (e) {
+												c(null, e);
+											}, false);
+										}
+									})(document, window, "//info-dvd.ru/bbm/js/bbm_form.js", Math.random(), function(){
+										window['bf349'] = new BbmFormMng({
+											id: 'bf349',
+											langs: {
+												errors : {
+													email_pattern: 'Введите корректный адрес электронной почты.',
+													alphanumeric_pattern: 'Может содержать только маленькие английские буквы и цифры',
+													phone_pattern: 'Некорректный формат телефона',
+													zip_pattern: 'Некорректный формат почтового индекса',
+													empty_field: 'Это поле необходимо заполнить.',
+													min_limit: 'Укажите значение не меньше ',
+													oferta_warn: 'Необходимо согласиться с условиями публичной оферты!'
+												},
+												processing: 'Обработка...'
+											}, rules: {
+												kupon:['alphanumeric'],
+													phone:['phone', 'required'],
+													email:['required', 'email'],
+												fullname:['required']
+											},
+										phone_verification: false});
+									});
+								}, 0);
+							</script>
+						</div>
+					</div>
+				</section>
+				<!-- end sWhy-->
+				<!-- start sQA-->
+				<section class="sQA section" id="sQA">
+					<div class="container">
+						<div class="section-title">
+							<h2><span class="text-primary">Часто</span> Задаваемые Вопросы</h2>
+						</div>
+						<div class="dd-group dd-group-js">
+							<div class="dd-group__item">
+								<div class="dd-group__head dd-head-js">
+									<div>
+										<div class="dd-group__title">❓ Подойдёт ли обучение, если я никогда не торговал?
+										</div>
+										<div class="text-secondary"></div>
+									</div>
+									<div class="dd-group__arrow">
+									</div>
+								</div>
+								<div class="dd-group__content dd-content-js">
+									<p>➡️ Да. Стратегия простая, базу Вы получите всего в 5 видеоуроках. А дальше — практика со мной. Даже с нуля Вы сможете постепенно включаться в рынок.</p>
+								</div>
+							</div>
+							<div class="dd-group__item">
+								<div class="dd-group__head dd-head-js">
+									<div>
+										<div class="dd-group__title">❓ Чем это отличается от «сигналов из чата»?
+										</div>
+										<div class="text-secondary"></div>
+									</div>
+									<div class="dd-group__arrow">
+									</div>
+								</div>
+								<div class="dd-group__content dd-content-js">
+									<p>➡️ Я не даю «слепые сигналы». Я объясняю рынок до входа, показываю логику и веду сделку. Вы учитесь принимать решения, а не копируете бездумно.</p>
+								</div>
+							</div>
+							<div class="dd-group__item">
+								<div class="dd-group__head dd-head-js">
+									<div>
+										<div class="dd-group__title">❓ Сколько времени в день потребуется?
+										</div>
+										<div class="text-secondary"></div>
+									</div>
+									<div class="dd-group__arrow">
+									</div>
+								</div>
+								<div class="dd-group__content dd-content-js">
+									<p>➡️ Всего 15–20 минут: разборы рынка в закрытом канале, ведение сделок. Мониторить рынок целый день не нужно.</p>
+								</div>
+							</div>
+							<div class="dd-group__item">
+								<div class="dd-group__head dd-head-js">
+									<div>
+										<div class="dd-group__title">❓ Можно ли совмещать с работой или учёбой?
+										</div>
+										<div class="text-secondary"></div>
+									</div>
+									<div class="dd-group__arrow">
+									</div>
+								</div>
+								<div class="dd-group__content dd-content-js">
+									<p>➡️ Да. Достаточно выделить полчаса в день, можно использовать смартфон, чтобы вести сделки на ходу.</p>
+								</div>
+							</div>
+							<div class="dd-group__item">
+								<div class="dd-group__head dd-head-js">
+									<div>
+										<div class="dd-group__title">❓ С каким депозитом можно начать?
+										</div>
+										<div class="text-secondary"></div>
+									</div>
+									<div class="dd-group__arrow">
+									</div>
+								</div>
+								<div class="dd-group__content dd-content-js">
+									<p>➡️ Даже со $100. Я завёл отдельный счёт именно для примера торговли на малом капитале. Главное не сумма, а правильный подход.</p>
+								</div>
+							</div>
+							<div class="dd-group__item">
+								<div class="dd-group__head dd-head-js">
+									<div>
+										<div class="dd-group__title">❓ Будут ли убыточные сделки?
+										</div>
+										<div class="text-secondary"></div>
+									</div>
+									<div class="dd-group__arrow">
+									</div>
+								</div>
+								<div class="dd-group__content dd-content-js">
+									<p>➡️ Конечно. Это часть трейдинга. Но сильные трендовые сделки перекрывают убытки и выводят счёт в плюс.</p>
+								</div>
+							</div>
+							<div class="dd-group__item">
+								<div class="dd-group__head dd-head-js">
+									<div>
+										<div class="dd-group__title">❓ Есть ли гарантия результата?
+										</div>
+										<div class="text-secondary"></div>
+									</div>
+									<div class="dd-group__arrow">
+									</div>
+								</div>
+								<div class="dd-group__content dd-content-js">
+									<p>➡️ Нет и быть не может: рынок всегда связан с риском. Я показываю свои реальные сделки, все шаги задокументированы. Вы учитесь на правильном опыте вместо того, чтобы тратить годы на ошибки.</p>
+								</div>
+							</div>
+							<div class="dd-group__item">
+								<div class="dd-group__head dd-head-js">
+									<div>
+										<div class="dd-group__title">❓ Что будет после 6 месяцев обучения?
+										</div>
+										<div class="text-secondary"></div>
+									</div>
+									<div class="dd-group__arrow">
+									</div>
+								</div>
+								<div class="dd-group__content dd-content-js">
+									<p>➡️ У Вас уже будет опыт и стратегия. Вы можете продолжить со мной ещё один поток для получения дополнительного опыта — или выйти в самостоятельную торговлю.</p>
+								</div>
+							</div>
+							<div class="dd-group__item">
+								<div class="dd-group__head dd-head-js">
+									<div>
+										<div class="dd-group__title">❓ А если я пропущу эфир или отстану от группы?
+										</div>
+										<div class="text-secondary"></div>
+									</div>
+									<div class="dd-group__arrow">
+									</div>
+								</div>
+								<div class="dd-group__content dd-content-js">
+									<p>➡️ Все сделки и разборы сохраняются в записи. Вы сможете вернуться к ним в удобное время.</p>
+								</div>
+							</div>
+							<div class="dd-group__item">
+								<div class="dd-group__head dd-head-js">
+									<div>
+										<div class="dd-group__title">❓ Какие рынки мы торгуем?
+										</div>
+										<div class="text-secondary"></div>
+									</div>
+									<div class="dd-group__arrow">
+									</div>
+								</div>
+								<div class="dd-group__content dd-content-js">
+									<p>➡️ Там, где есть тренды: валюты (EURUSD, GBPUSD, USDJPY и др.), золото, нефть, криптовалюты, фьючерсы на Мосбирже, иногда индексы.</p>
+								</div>
+							</div>
+							<div class="dd-group__item">
+								<div class="dd-group__head dd-head-js">
+									<div>
+										<div class="dd-group__title">❓ На каких таймфреймах можно работать?
+										</div>
+										<div class="text-secondary"></div>
+									</div>
+									<div class="dd-group__arrow">
+									</div>
+								</div>
+								<div class="dd-group__content dd-content-js">
+									<p>➡️ В основном работа ведется на дневном и 4-часовом таймфреймах. В зависимости от тренда на рынке сделка может удерживаться днями и неделями. Такая торговля занимает минимум времени и приносит максимальный результат.</p>
+								</div>
+							</div>
+							<div class="dd-group__item">
+								<div class="dd-group__head dd-head-js">
+									<div>
+										<div class="dd-group__title">❓ Какой торговый терминал будем использовать?
+										</div>
+										<div class="text-secondary"></div>
+									</div>
+									<div class="dd-group__arrow">
+									</div>
+								</div>
+								<div class="dd-group__content dd-content-js">
+									<p>➡️ Если Ваш брокер предоставляет торговый терминал Metatrader 5, можно использовать его.</p>
+								</div>
+							</div>
+						</div>
+						<div class="sQA__panel text-center pt-5">
+							<h3 class="mb-4">Остались вопросы?</h3>
+							<p class="mb-4">Любой вопрос с удовольствием обсудим лично. Закажите бесплатную консультацию, <br> и специалист Инфоклуба поможет найти ответы именно для Вашей ситуации.</p><a class="btn btn-primary" href="#sForm">Заказать бесплатную консультацию </a>
+						</div>
+					</div>
+				</section>
+				<!-- end sQA-->
+			</main>
+			<footer class="footer section">
+				<div class="footer__container container">
+					<div class="before">
+						<svg width="30" height="26" viewBox="0 0 30 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M12.8948 0.112088C9.97445 0.474633 7.30197 1.67077 5.11637 3.59348C2.38099 5.99991 0.672099 9.20686 0.193504 12.8316C-0.114646 15.1659 0.152596 17.5863 0.97475 19.908C1.24314 20.6659 1.92827 22.0408 2.40849 22.7853C2.79872 23.3903 3.3936 24.1738 3.90016 24.7501L4.13195 25.0137L4.16934 24.5638C4.24257 23.6829 4.44544 22.9738 4.8033 22.3478C5.00685 21.9918 5.68155 21.3205 6.05921 21.0983C6.33824 20.934 6.37522 20.8926 6.3891 20.7282C6.4056 20.5322 6.40062 20.524 5.79511 19.7483C5.43772 19.2905 5.07677 18.5585 4.9288 17.9915C4.78994 17.4593 4.73704 16.3405 4.82273 15.7468C4.9046 15.179 5.10165 14.389 5.27273 13.9425C5.52462 13.285 6.06989 12.202 6.42246 11.659L6.76634 11.1294V9.99535C6.76634 9.37163 6.78168 8.8613 6.80044 8.8613C6.81919 8.8613 8.22753 9.33032 9.93013 9.90352C11.6327 10.4768 13.1789 10.9794 13.3662 11.0206C13.8103 11.1182 14.8228 11.1173 15.2257 11.019C15.3985 10.9768 16.9129 10.4769 18.5911 9.90799L21.6422 8.87375V9.98449V11.0953L21.9778 11.5621C22.8181 12.7313 23.4227 14.0054 23.7474 15.2917C23.9054 15.9178 23.918 16.0302 23.915 16.7936C23.9125 17.4644 23.8908 17.6985 23.799 18.0447C23.6361 18.6592 23.2769 19.3544 22.8228 19.9346C22.4667 20.3894 22.4282 20.4611 22.4405 20.6466C22.4534 20.8427 22.4728 20.8637 22.8342 21.0725C24.0452 21.7723 24.6909 22.9244 24.8147 24.6062C24.8346 24.877 24.8624 25.0986 24.8764 25.0986C24.8904 25.0986 25.0376 24.9489 25.2035 24.7659C28.2912 21.3583 29.6123 16.8505 28.865 12.2729C28.4003 9.42604 27.0544 6.7028 25.0807 4.61595C22.8857 2.29502 20.2328 0.833025 17.1637 0.252953C16.4843 0.124545 16.3072 0.113419 14.7543 0.101813C13.8324 0.0949452 12.9956 0.0995769 12.8948 0.112088ZM14.8282 3.53886C15.1893 3.5865 16.6577 4.06473 23.1086 6.23553C24.8361 6.81683 25.0196 6.92778 24.7212 7.21036C24.6464 7.28116 22.9716 7.86896 20.0201 8.86028C15.3481 10.4295 15.2001 10.4757 14.6469 10.5375C13.9734 10.6127 13.697 10.5342 8.92255 8.91102C6.43194 8.06428 4.32093 7.32817 4.23147 7.2752C4.03159 7.15691 3.99434 6.97319 4.14357 6.84164C4.26839 6.73154 4.43659 6.67218 9.64681 4.89822C13.8845 3.45533 13.9884 3.42807 14.8282 3.53886ZM8.28535 12.8776C8.28535 12.9491 8.31123 13.0238 8.34287 13.0436C8.3745 13.0635 8.46879 13.1894 8.55239 13.3234C8.78762 13.7004 8.76772 13.9897 8.48178 14.3476C8.03398 14.908 7.95908 15.0162 7.80131 15.3296C7.56125 15.8066 7.44623 16.2332 7.4137 16.767C7.31339 18.4124 8.35806 19.7845 9.93458 20.0782C10.9901 20.2749 12.1287 19.901 12.9443 19.0899L13.2504 18.7855L13.2844 19.0805C13.3565 19.7042 13.7939 20.6077 14.3294 21.2389L14.5101 21.4519L14.7107 21.2174C15.221 20.6211 15.6668 19.7838 15.7481 19.2692C15.8278 18.764 15.7925 18.7732 16.1967 19.1536C17.265 20.1589 18.7741 20.4119 20.0184 19.7943C20.3091 19.65 20.5151 19.4929 20.8105 19.19C21.431 18.5538 21.6946 17.8844 21.6946 16.9446C21.6946 16.0713 21.402 15.2901 20.8038 14.566C20.6375 14.3645 20.4751 14.1501 20.4432 14.0894C20.3164 13.8487 20.4129 13.4879 20.7038 13.1145C20.9762 12.7651 20.9155 12.7258 20.1611 12.7637C18.9522 12.8243 17.7722 13.1115 16.8495 13.5696C16.1027 13.9403 15.6691 14.3559 15.3565 15.0003C14.9737 15.7898 14.9029 16.5127 15.1222 17.3935C15.1576 17.5353 15.1537 17.5388 15.0187 17.4867C14.836 17.4161 14.1739 17.4167 14.0437 17.4876C13.9225 17.5535 13.921 17.5345 14.0215 17.1978C14.1217 16.862 14.1205 16.1187 14.019 15.6811C13.6545 14.1097 12.232 13.1804 9.64723 12.8253C9.34474 12.7837 8.91454 12.7492 8.6913 12.7487C8.29557 12.7476 8.28535 12.7509 8.28535 12.8776ZM10.5199 14.2359C9.88655 14.9483 9.8644 16.0097 10.4685 16.6914C11.3847 17.7251 13.0519 16.8036 13.0519 15.2635C13.0519 14.935 13.1037 14.9358 13.2702 15.2667C13.5111 15.7457 13.5912 16.4548 13.4667 17.0066C13.2245 18.0804 12.2969 18.9776 11.1781 19.2205C10.8033 19.3017 10.69 19.3058 10.34 19.2506C8.59267 18.9748 7.75862 17.1503 8.63274 15.5159C8.96357 14.8974 9.5662 14.3746 10.2267 14.1332C10.6813 13.9671 10.7403 13.9878 10.5199 14.2359ZM18.9368 14.1535C19.7979 14.4829 20.4255 15.1651 20.7291 16.1016C20.8571 16.4963 20.8565 17.2009 20.7278 17.5922C20.5491 18.1354 20.123 18.6861 19.6735 18.9548C19.4276 19.1017 18.7289 19.2962 18.4518 19.2949C18.126 19.2933 17.5429 19.143 17.2016 18.9727C16.1119 18.4288 15.4153 17.1299 15.6124 16.0091C15.6772 15.6408 15.846 15.212 16.0056 15.0102C16.0857 14.909 16.0883 14.9143 16.0593 15.1167C16.0197 15.3929 16.1573 15.9911 16.3289 16.2886C16.8891 17.2602 18.1299 17.4151 18.7459 16.5905C19.2284 15.9444 19.1652 14.8692 18.6065 14.2225C18.4005 13.984 18.4608 13.9714 18.9368 14.1535Z" fill="var(--bs-primary)"></path>
+						</svg>
+					</div>
+					<div class="row">
+						<div class="col-md col-lg-5">
+							<div class="footer__left-col">
+								<div class="footer__txt footer__txt--h6">
+									<p>
+										<script>
+											function InfoDVDCurrentYear(year) {
+												var cur = new Date();
+												if (cur.getFullYear() != year)
+													document.write('© ' + year + '&mdash;' + cur.getFullYear() + " ");
+												else document.write(year);
+											}
+											InfoDVDCurrentYear('2008 ');
+										</script><br>Проект <a href="//www.infoclub.info/" target="_blank">«Инфоклуб»</a><br>
+										
+										<script src="//info-dvd.ru/codes/js/legal.utf8.js"></script>
+									</p>
+								</div>
+								<div class="footer__txt">
+									<p><a class="tdu" href="//info-dvd.ru/professional/" target="_blank" title="экспертам-авторам (инфо-продюсирование)">экспертам-авторам (инфо-продюсирование)</a><br/><a class="tdu" href="//info-dvd.ru/about/partnership" target="_blank" title="партнёрская программа">партнёрская программа</a><br/><a class="tdu" href="//info-dvd.ru/pages/privacy" target="_blank" title="политика конфиденциальности"> политика конфиденциальности</a><br/><a class="tdu" href="//info-dvd.ru/pages/risk-warning" target="_blank" title="предупреждение о рисках"> предупреждение о рисках</a><br/><a class="tdu" href="https://tradingvision.pro/docs/oferta.pdf" target="_blank" title="лицензионный договор-оферта"> лицензионный договор-оферта</a></p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-5 col-lg-4 ms-lg-auto">
+							<div class="footer__right-col">
+								<div class="footer__txt footer__txt--support text-lg-end">
+									<h6>Служба поддержки:</h6>
+									<p><a href="//info.support-desk.ru/form" target="_blank" title="Задать свой вопрос">Задать свой вопрос</a><a href="//info.support-desk.ru/?base=1" target="_blank" title="Частые вопросы и ответы на них">Частые вопросы и ответы на них</a></p>
+								</div>
+								<div class="footer__txt text-lg-end">
+									<h6>Позвоните нам:</h6>
+									<p><span>
+											<script src="//info-dvd.ru/codes/js/telephone-number.js"></script></span><br/>или <a class="tdu" href="//info-dvd.ru/support/apply/" target="_blank">оставьте свой номер </a>&nbsp;и мы вам перезвоним</p>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<!-- end sCatalog-->
-				<!-- start sForm-->
-				<section class="sForm section" id="sForm">
-					<div class="container">
-						<div class="section-title text-center">
-							<h2>sForm</h2>
-						</div>
-						<div class="sForm__row row">
-						</div>
-						<div class="form-wrap">
-							<form>
-								<div class="form-wrap__input-wrap form-group"><input class="form-wrap__input form-control" inputmode="" name="" type="text" placeholder=""/>
-								</div>
-								<!-- +e.input-wrap-->
-								<div class="form-wrap__input-wrap form-group"><input class="form-wrap__input form-control" inputmode="" name="" type="text" placeholder=""/>
-								</div>
-								<!-- +e.input-wrap-->
-								<div class="form-wrap__input-wrap form-group"><input class="form-wrap__input form-control" inputmode="" name="" type="text" placeholder=""/>
-								</div>
-								<!-- +e.input-wrap-->
-								<div class="form-wrap__input-wrap form-group"><input class="form-wrap__input form-control" inputmode="" name="" type="text" placeholder=""/>
-								</div>
-								<!-- +e.input-wrap-->
-								<button class="form-wrap__btn btn btn-primary" type="submit">Submit
-								</button>
-								<div class="form-wrap__policy">
-									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox" checked="checked"/><small class="custom-input__text text-secondary">Согласен на обработку и хранение моих персональных данных в соответствии с условиями</small>
-									</label>
-								</div>
-							</form>
-						</div>
-					</div>
-				</section>
-				<!-- end sForm-->
-				<!-- start sContact-->
-				<section class="sContact section" id="sContact">
-					<div class="container">
-						<div class="section-title text-center">
-							<h2>sContact</h2>
-						</div>
-						<div class="sContact__row row">
-						</div>
-					</div>
-				</section>
-				<!-- end sContact-->
-			</main>
-			<script>addBlock(`footer`)</script>
-			<div id="footerWrap"></div>
+			</footer>
 		</div>
 		<!--  start modals-->
 		<div id="modal-call" style="display: none">

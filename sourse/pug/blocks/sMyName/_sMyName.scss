@@ -1,0 +1,51 @@
+// start .sMyName
+.sMyName {
+	// --sPT: #{rem()};
+	// --sPB: #{rem()};
+	// --sTPB: #{rem()};
+
+	&__row {
+		// --bs-gutter-x: #{rem()};
+		// --bs-gutter-y: #{rem()};
+	}
+	h2 {
+		max-width: 10em;
+	}
+	.section-title {
+		p {
+			@include rfs(35px);
+			font-family: Akrobat, sans-serif;
+			font-weight: bold;
+			line-height: 1;
+			text-transform: uppercase;
+			text-wrap: balance;
+			@include media-breakpoint-up(lg) {
+				max-width: 426px;
+				margin-left: auto;
+			}
+			span {
+				color: $primary;
+				display: block;
+			}
+		}
+	}
+	&__col {
+	}
+	&__item {
+	}
+
+	@include media-breakpoint-up(xl) {
+	}
+	@include media-breakpoint-up(lg) {
+	}
+	@include media-breakpoint-up(md) {
+	}
+	@include media-breakpoint-up(sm) {
+	}
+	@include media-breakpoint-between(md, xl) {
+	}
+	@include media-breakpoint-only(xl) {
+	}
+	@include media-breakpoint-down(xl) {
+	}
+} // end.sMyName
