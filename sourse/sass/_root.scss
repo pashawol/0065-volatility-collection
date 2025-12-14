@@ -4,10 +4,9 @@
 	--fancybox-content-color: var(--bs-body-color);
 	--swiperArrowSize: #{rem(40)};
 	--swiperArrowPosition: calc(-1 * var(--swiperArrowSize) / 2);
-	--swiperBorderColorDef: #a1a1a1;
+	--swiperBorderColorDef: var(--bs-primary);
 	--swiperColorDef: #fff;
-	--swiperBgDef: #a1a1a1;
-	--swiperBgDef: #a1a1a1;
+	--swiperBgDef: var(--bs-primary);
 
 	--swiperBorderColorDefHover: var(--bs-primary);
 	--swiperColorDefHover: #fff;
@@ -116,17 +115,14 @@ h2,
 	text-transform: uppercase;
 	letter-spacing: -0.05em;
 }
+.h5,
+h5,
 .h3 {
 	text-transform: uppercase;
 	font-family: Akrobat, sans-serif;
 	font-weight: bold;
 	letter-spacing: -0.04em;
 }
-.h5,
-h5 {
-	letter-spacing: -0.04em;
-}
-
 .h25 {
 	@include rfs(60px);
 }

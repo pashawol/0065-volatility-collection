@@ -1,0 +1,18 @@
+mixin sRew(data)
+	// start sRew
+	+b.SECTION.sRew.section#sRew&attributes(attributes)
+		.container
+			+b.section-title.text-center
+				h2 
+					span.text-primary Сделки моих учеников 
+					br
+					| с предыдущих потоков обучения
+				
+			+defSlider()
+				mixin slide(src)
+					.swiper-slide(data-fancybox="modal-slider-rev-sRew" data-src=src)
+						+img(src=src, alt="")
+				+slide("img/slide.png")
+				+slide("img/slide.png")
+				+slide("img/slide.png")
+	// end sRew

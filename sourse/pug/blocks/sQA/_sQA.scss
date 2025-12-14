@@ -14,6 +14,15 @@
 	&__item {
 	}
 
+	counter-reset: num;
+	.dd-group__title {
+		&::before {
+			content: counter(num);
+			counter-increment: num;
+			color: $primary;
+			margin-right: 0.6em;
+		}
+	}
 	@include media-breakpoint-up(xl) {
 	}
 	@include media-breakpoint-up(lg) {
