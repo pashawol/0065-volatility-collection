@@ -45,6 +45,20 @@ function eventHandler() {
 			},
 		});
 	}
+	new Swiper(".def-swiper-js2", {
+		slidesPerView: "auto",
+		spaceBetween: 0,
+		// loop: true,
+		// autoHeight: true,
+		pagination: {
+			el: defSwiper.querySelector(".swiper-pagination"),
+			type: "fraction",
+		},
+		navigation: {
+			nextEl: defSwiper.querySelector(".swiper-button-next"),
+			prevEl: defSwiper.querySelector(".swiper-button-prev"),
+		},
+	});
 
 	new Swiper(".centered-swiper-js .swiper", {
 		slidesPerView: 1,
